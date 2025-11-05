@@ -1,0 +1,54 @@
+/* Dark Theme Variables */
+.dark {
+  --background: color-mix(in srgb, var(--base-moss) 85%, black 15%);
+  --foreground: color-mix(in srgb, var(--base-salmon) 20%, white 80%);
+
+  --card: color-mix(in srgb, var(--base-moss) 75%, black 25%);
+  --card-foreground: color-mix(in srgb, var(--base-salmon) 20%, white 80%);
+
+  --popover: color-mix(in srgb, var(--base-moss) 75%, black 25%);
+  --popover-foreground: color-mix(in srgb, var(--base-salmon) 20%, white 80%);
+
+  --primary: color-mix(in srgb, var(--base-salmon) 75%, white 25%);
+  --primary-foreground: var(--base-navy);
+
+  --secondary: color-mix(in srgb, var(--base-moss) 65%, var(--base-steel) 35%);
+  --secondary-foreground: white;
+
+  --muted: color-mix(in srgb, var(--base-moss) 65%, black 35%);
+  --muted-foreground: color-mix(in srgb, var(--base-steel) 75%, white 25%);
+
+  --accent: color-mix(in srgb, var(--base-salmon) 90%, var(--base-amber) 10%);
+  --accent-foreground: var(--base-navy);
+
+  --destructive: #ef4444;
+  --destructive-foreground: white;
+
+  --success: color-mix(in srgb, var(--base-moss) 85%, var(--base-amber) 15%);
+  --success-foreground: white;
+
+  --warning: color-mix(in srgb, var(--base-amber) 90%, white 10%);
+  --warning-foreground: var(--base-navy);
+
+  --info: color-mix(in srgb, var(--base-steel) 65%, white 35%);
+  --info-foreground: var(--base-navy);
+
+  --border: color-mix(in srgb, var(--base-moss) 55%, var(--base-steel) 45%);
+  --input: color-mix(in srgb, var(--base-moss) 55%, var(--base-steel) 45%);
+  --ring: color-mix(in srgb, var(--base-salmon) 85%, var(--base-amber) 15%);
+
+  --radius: 0.5rem;
+
+  --chart-1: color-mix(in srgb, var(--base-salmon) 70%, white 30%);
+  --chart-2: var(--base-moss);
+  --chart-3: var(--base-salmon);
+  --chart-4: var(--base-amber);
+  --chart-5: var(--base-steel);
+
+  /* Heatmap scale (low -> high) */
+  --heatmap-0: #328f3c;
+  --heatmap-1: #36a546;
+  --heatmap-2: #39bb4f;
+  --heatmap-3: #3ed25a;
+  --heatmap-4: #46e368;
+}

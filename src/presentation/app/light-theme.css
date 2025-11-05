@@ -1,0 +1,65 @@
+/* Light Theme Variables */
+:root {
+  --base-navy: #1E2A44;
+  --base-steel: #A3A9B7;
+  --base-amber: #D9A441;
+  --base-moss: #3c492b;
+  --base-salmon: #E89A8E;
+
+  /* Light mode: white/light backgrounds with green accents */
+  --background: color-mix(in srgb, white 100%, transparent);
+  --foreground: color-mix(in srgb, var(--base-navy) 90%, black 10%);
+
+  --card: color-mix(in srgb, white 98%, var(--base-moss) 2%);
+  --card-foreground: color-mix(in srgb, var(--base-navy) 90%, black 10%);
+
+  --popover: color-mix(in srgb, white 100%, transparent);
+  --popover-foreground: color-mix(in srgb, var(--base-navy) 90%, black 10%);
+
+  /* WCAG AA compliant: 4.5:1+ contrast ratio */
+  --primary: color-mix(in srgb, var(--base-salmon) 75%, var(--base-navy) 55%);
+  --primary-foreground: white;
+
+  --secondary: color-mix(in srgb, var(--base-moss) 15%, white 85%);
+  --secondary-foreground: var(--base-navy);
+
+  --muted: color-mix(in srgb, var(--base-steel) 10%, white 90%);
+  /* WCAG AA compliant: darkened further to achieve 4.5:1 contrast */
+  --muted-foreground: color-mix(in srgb, var(--base-navy) 60%, var(--base-steel) 40%);
+
+  /* WCAG AA compliant: darkened significantly to achieve 4.5:1 contrast */
+  --accent: color-mix(in srgb, var(--base-moss) 65%, var(--base-navy) 35%);
+  --accent-foreground: white;
+
+  --destructive: #ef4444;
+  --destructive-foreground: white;
+
+  /* WCAG AA compliant: darkened to achieve 3.0:1 contrast for UI components */
+  --success: color-mix(in srgb, var(--base-moss) 75%, black 25%);
+  --success-foreground: white;
+
+  --warning: color-mix(in srgb, var(--base-amber) 30%, white 70%);
+  --warning-foreground: var(--base-navy);
+
+  --info: color-mix(in srgb, var(--base-steel) 25%, white 75%);
+  --info-foreground: var(--base-navy);
+
+  --border: color-mix(in srgb, var(--base-steel) 20%, white 80%);
+  --input: color-mix(in srgb, var(--base-steel) 15%, white 85%);
+  --ring: color-mix(in srgb, var(--base-salmon) 50%, var(--base-amber) 50%);
+
+  --radius: 0.5rem;
+
+  --chart-1: color-mix(in srgb, var(--base-salmon) 70%, white 30%);
+  --chart-2: var(--base-moss);
+  --chart-3: var(--base-salmon);
+  --chart-4: var(--base-amber);
+  --chart-5: var(--base-steel);
+
+  /* Heatmap scale (low -> high) */
+  --heatmap-0: #0ba360;
+  --heatmap-1: #0f9d58;
+  --heatmap-2: #14532d;
+  --heatmap-3: #1a3a2a;
+  --heatmap-4: #1f2937;
+}

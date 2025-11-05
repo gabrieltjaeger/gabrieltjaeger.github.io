@@ -1,0 +1,413 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Configure Tailwind's dark mode variant following official documentation */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "./light-theme.css";
+@import "./dark-theme.css";
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    position: relative;
+  }
+
+  /* Texture overlay */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
+    opacity: 0.04;
+    pointer-events: none;
+    z-index: 9999;
+    mix-blend-mode: overlay;
+  }
+
+  /* Glassmorphism dot texture */
+  .glass-texture {
+    position: relative;
+    backdrop-filter: blur(12px) saturate(180%);
+    background: color-mix(in srgb, var(--card) 40%, transparent);
+    border: 1px solid color-mix(in srgb, var(--border) 30%, transparent);
+  }
+
+  .glass-texture::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 1px 1px, color-mix(in srgb, var(--foreground) 8%, transparent) 1px, transparent 0);
+    background-size: 24px 24px;
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  /* Sharp dot texture for cards */
+  .dots-texture {
+    position: relative;
+  }
+
+  .dots-texture::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(circle at 2px 2px, color-mix(in srgb, var(--accent) 12%, transparent) 1.5px, transparent 0);
+    background-size: 20px 20px;
+    opacity: 0.3;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  /* Liquid Glass - Apple's new design language */
+  .liquid-glass {
+    position: relative;
+    background:
+      linear-gradient(135deg,
+        color-mix(in srgb, var(--card) 65%, transparent) 0%,
+        color-mix(in srgb, var(--card) 45%, transparent) 50%,
+        color-mix(in srgb, var(--card) 60%, transparent) 100%);
+    backdrop-filter: blur(40px) saturate(200%) brightness(1.1);
+    -webkit-backdrop-filter: blur(40px) saturate(200%) brightness(1.1);
+    border: 1px solid color-mix(in srgb, var(--accent) 15%, transparent);
+    box-shadow:
+      0 8px 32px 0 rgba(0, 0, 0, 0.18),
+      0 2px 8px 0 rgba(0, 0, 0, 0.08),
+      inset 0 0 0 1px color-mix(in srgb, var(--background) 8%, transparent),
+      inset 0 2px 4px 0 rgba(255, 255, 255, 0.1),
+      inset 0 -2px 4px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 28px;
+  }
+
+  /* Top shine - simulating light refraction */
+  .liquid-glass::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    height: 45%;
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.25) 0%,
+        rgba(255, 255, 255, 0.1) 30%,
+        transparent 100%);
+    border-radius: 28px 28px 0 0;
+    pointer-events: none;
+    filter: blur(1px);
+  }
+
+  /* Dynamic light reflection - caustics effect */
+  .liquid-glass::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background:
+      radial-gradient(ellipse 80% 50% at 20% 30%,
+        color-mix(in srgb, var(--accent) 12%, transparent),
+        transparent 50%),
+      radial-gradient(ellipse 60% 40% at 80% 70%,
+        color-mix(in srgb, var(--salmon) 8%, transparent),
+        transparent 50%);
+    border-radius: 26px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    mix-blend-mode: soft-light;
+  }
+
+  .liquid-glass:hover::after {
+    opacity: 1;
+  }
+
+  /* Liquid button */
+  .liquid-button {
+    position: relative;
+    background: linear-gradient(145deg,
+        color-mix(in srgb, var(--primary) 100%, white 10%) 0%,
+        var(--primary) 45%,
+        color-mix(in srgb, var(--primary) 95%, black 5%) 100%);
+    backdrop-filter: blur(20px) saturate(150%);
+    -webkit-backdrop-filter: blur(20px) saturate(150%);
+    border: 1px solid color-mix(in srgb, var(--primary) 50%, transparent);
+    box-shadow:
+      0 4px 20px 0 color-mix(in srgb, var(--primary) 40%, transparent),
+      0 2px 8px 0 rgba(0, 0, 0, 0.15),
+      inset 0 2px 3px 0 rgba(255, 255, 255, 0.35),
+      inset 0 -2px 3px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+  }
+
+  .liquid-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55%;
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.35) 0%,
+        rgba(255, 255, 255, 0.15) 50%,
+        transparent 100%);
+    border-radius: 18px 18px 0 0;
+    pointer-events: none;
+    filter: blur(0.5px);
+  }
+
+  /* Glass distortion effect on hover */
+  .liquid-button:hover {
+    box-shadow:
+      0 6px 24px 0 color-mix(in srgb, var(--primary) 50%, transparent),
+      0 3px 12px 0 rgba(0, 0, 0, 0.2),
+      inset 0 2px 3px 0 rgba(255, 255, 255, 0.4),
+      inset 0 -2px 3px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  /* Liquid pill/capsule (iOS style) */
+  .liquid-pill {
+    position: relative;
+    background: linear-gradient(140deg,
+        color-mix(in srgb, var(--card) 75%, transparent) 0%,
+        color-mix(in srgb, var(--card) 50%, transparent) 50%,
+        color-mix(in srgb, var(--card) 70%, transparent) 100%);
+    backdrop-filter: blur(30px) saturate(180%) brightness(1.05);
+    -webkit-backdrop-filter: blur(30px) saturate(180%) brightness(1.05);
+    border: 1px solid color-mix(in srgb, var(--border) 20%, transparent);
+    box-shadow:
+      0 4px 20px 0 rgba(0, 0, 0, 0.1),
+      0 1px 4px 0 rgba(0, 0, 0, 0.06),
+      inset 0 1px 2px 0 rgba(255, 255, 255, 0.15),
+      inset 0 -1px 2px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 9999px;
+    padding: 9px 18px;
+  }
+
+  .liquid-pill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 8%;
+    right: 8%;
+    height: 50%;
+    background: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.3) 0%,
+        rgba(255, 255, 255, 0.1) 60%,
+        transparent 100%);
+    border-radius: 9999px 9999px 0 0;
+    pointer-events: none;
+    filter: blur(0.5px);
+  }
+
+  /* Subtle shimmer on hover */
+  .liquid-pill:hover {
+    box-shadow:
+      0 6px 24px 0 rgba(0, 0, 0, 0.12),
+      0 2px 6px 0 rgba(0, 0, 0, 0.08),
+      inset 0 1px 2px 0 rgba(255, 255, 255, 0.2),
+      inset 0 -1px 2px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  /* 3D depth effect */
+  .depth-3d {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+  }
+
+  .depth-3d:hover {
+    transform: translateZ(20px) scale(1.02);
+  }
+
+  .depth-3d::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 8%, transparent), transparent 60%);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .depth-3d:hover::before {
+    opacity: 1;
+  }
+
+  /* Apple-style frosted glass */
+  .frosted-glass {
+    background: color-mix(in srgb, var(--card) 60%, transparent);
+    backdrop-filter: blur(20px) saturate(180%);
+    border: 1px solid color-mix(in srgb, var(--border) 20%, transparent);
+    box-shadow:
+      0 8px 32px 0 rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 0 color-mix(in srgb, var(--accent) 10%, transparent);
+  }
+
+  /* Mesh gradient background for sections */
+  .mesh-bg {
+    background:
+      radial-gradient(at 0% 0%, color-mix(in srgb, var(--moss) 15%, transparent) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, color-mix(in srgb, var(--accent) 10%, transparent) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, color-mix(in srgb, var(--success) 12%, transparent) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, color-mix(in srgb, var(--amber) 8%, transparent) 0px, transparent 50%);
+  }
+
+  /* Liquid pill/capsule (iOS style) */
+  .liquid-pill {
+    position: relative;
+    background: linear-gradient(135deg,
+        color-mix(in srgb, var(--card) 75%, transparent) 0%,
+        color-mix(in srgb, var(--card) 55%, transparent) 100%);
+    backdrop-filter: blur(30px) saturate(180%);
+    border: 1.5px solid color-mix(in srgb, var(--border) 25%, transparent);
+    box-shadow:
+      0 4px 24px 0 rgba(0, 0, 0, 0.12),
+      inset 0 1px 0 0 color-mix(in srgb, white 15%, transparent);
+    border-radius: 9999px;
+    padding: 8px 20px;
+  }
+
+  .liquid-pill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(180deg,
+        color-mix(in srgb, white 20%, transparent) 0%,
+        transparent 100%);
+    border-radius: 9999px 9999px 0 0;
+    pointer-events: none;
+  }
+
+  /* Engineer grid background class */
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-foreground;
+  }
+
+  /* Gradient background: moss green → navy blue */
+  /* Light mode: lighter greens/blues for subtle background */
+  .bg-gradient-moss-navy {
+    background: linear-gradient(to bottom,
+        color-mix(in srgb, var(--base-moss) 8%, white 92%),
+        color-mix(in srgb, var(--base-navy) 15%, white 85%));
+  }
+
+  /* Dark mode: deep forest - darker greens/blues */
+  .dark .bg-gradient-moss-navy {
+    background: linear-gradient(to bottom,
+        color-mix(in srgb, var(--base-moss) 85%, black 15%),
+        color-mix(in srgb, var(--base-navy) 90%, black 10%));
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  /* Add smooth scrolling and selection styling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-foreground;
+  }
+}
+
+/* Professional utilities - sophisticated, not circus */
+@layer utilities {
+
+  /* Smooth animations */
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
