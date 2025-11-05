@@ -1,0 +1,68 @@
+{
+  "experiences": [
+    {
+      "id": "exp-1",
+      "company": "TechCorp",
+      "role": "Senior Full-Stack Engineer",
+      "startDate": "2022-01",
+      "endDate": null,
+      "description": "Leading development of the core product platform serving 1M+ users. Architecting scalable microservices and mentoring junior engineers.",
+      "achievements": [
+        "Reduced API response time by 60% through database optimization and caching strategies",
+        "Led migration from monolith to microservices, improving deployment frequency by 10x",
+        "Mentored 5 junior engineers, 3 of whom were promoted to mid-level",
+        "Established engineering best practices and code review standards"
+      ],
+      "technologies": ["Next.js", "TypeScript", "Node.js", "PostgreSQL", "Redis", "Docker", "AWS"],
+      "companyUrl": "https://techcorp.example.com"
+    },
+    {
+      "id": "exp-2",
+      "company": "StartupXYZ",
+      "role": "Full-Stack Developer",
+      "startDate": "2020-03",
+      "endDate": "2021-12",
+      "description": "Early engineer at a fast-growing SaaS startup. Built features from design to deployment and helped scale the platform to handle 100K+ users.",
+      "achievements": [
+        "Shipped 20+ major features including real-time collaboration and payment processing",
+        "Implemented CI/CD pipeline reducing deployment time from 2 hours to 10 minutes",
+        "Built admin dashboard used by customer success team to manage 1000+ accounts",
+        "Reduced customer-reported bugs by 75% through comprehensive testing"
+      ],
+      "technologies": ["React", "Node.js", "MongoDB", "Stripe", "AWS", "GitHub Actions"],
+      "companyUrl": "https://startupxyz.example.com"
+    },
+    {
+      "id": "exp-3",
+      "company": "Digital Agency Co",
+      "role": "Frontend Developer",
+      "startDate": "2018-06",
+      "endDate": "2020-02",
+      "description": "Developed custom websites and web applications for clients across various industries. Collaborated with designers and project managers to deliver pixel-perfect implementations.",
+      "achievements": [
+        "Delivered 15+ client projects on time and within budget",
+        "Improved website performance scores from 60 to 95+ on Lighthouse",
+        "Created reusable component library used across 10+ projects",
+        "Received 'Developer of the Year' award in 2019"
+      ],
+      "technologies": ["React", "Vue.js", "Sass", "WordPress", "Figma"],
+      "companyUrl": "https://digitalagency.example.com"
+    },
+    {
+      "id": "exp-4",
+      "company": "Freelance",
+      "role": "Web Developer",
+      "startDate": "2016-09",
+      "endDate": "2018-05",
+      "description": "Built websites and web applications for small businesses and startups. Managed entire project lifecycle from requirements gathering to deployment.",
+      "achievements": [
+        "Completed 25+ projects for clients in e-commerce, education, and healthcare",
+        "Maintained 100% client satisfaction rate",
+        "Built e-commerce site that generated $500K+ in first year",
+        "Established long-term relationships with 10+ repeat clients"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "WordPress"],
+      "companyUrl": null
+    }
+  ]
+}

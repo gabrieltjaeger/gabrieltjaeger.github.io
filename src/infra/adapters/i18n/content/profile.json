@@ -1,0 +1,31 @@
+{
+  "name": "Gabriel Trugillo Jaeger",
+  "title": "Arquiteto de Software & Construtor de Sistemas Escaláveis",
+  "taglines": [
+    "Transformando sistemas legados em arquiteturas modernas",
+    "Construindo mundos lógicos que evoluem",
+    "Código limpo, impacto real"
+  ],
+  "bio": "Sou arquiteto de software com 3+ anos de experiência em modernização de sistemas e construção de aplicações escaláveis. Especializado em PHP (CakePHP, Slim), Node.js, arquitetura limpa e DevOps. Minha abordagem combina rigor técnico com propósito social — acredito que tecnologia deve servir pessoas, não apenas processos.",
+  "about": {
+    "story": "Minha jornada na tecnologia começou por necessidade e curiosidade. Cresci em Rio Grande, RS, em uma família de baixa renda, e vi na programação não apenas uma profissão, mas uma forma de criar soluções reais para problemas reais.\n\nAos 24 anos, já trabalhei como desenvolvedor full-stack, arquiteto de software e bolsista de iniciação científica. Modernizei sistemas legados CakePHP 2 para CakePHP 5 com testes automatizados, CI/CD e padrões modernos. Construí um sistema completo de controle financeiro para uma instituição espírita. Desenvolvi soluções que conectam produtores rurais a consumidores. Criei jogos, automações e ferramentas que unem lógica e criatividade.\n\nMinha neurodivergência (autismo nível 1 e TDAH) não é obstáculo — é vantagem competitiva. Me dá hiperfoco, profundidade lógica e uma forma única de enxergar sistemas. Aprendo rápido, penso em arquitetura e não apenas em código, e busco criar soluções que não apenas funcionam, mas evoluem.\n\nHoje, meu objetivo é claro: construir produtos digitais que gerem impacto, escalar minha autonomia financeira e deixar um legado técnico e humano. Acredito em código como expressão de lógica e humanidade — criar sistemas é criar mundos que funcionam.",
+    "interests": [
+      "Arquitetura de software e Domain-Driven Design",
+      "Modernização de sistemas legados",
+      "Automação e DevOps",
+      "Design de sistemas gamificados e psicologia da dopamina",
+      "Preservação digital de conhecimento e memória"
+    ],
+    "currently": {
+      "learning": "AWS Solutions Architecture e padrões avançados de Clean Architecture",
+      "reading": "Designing Data-Intensive Applications by Martin Kleppmann e implementando aprendizados em projetos reais",
+      "building": "SaaS de monitoramento de redes e conectividade, além de um sistema de gestão escalável para o projeto e-COO (FURG)"
+    }
+  },
+  "location": "Rio Grande, RS – Brasil",
+  "languages": ["Português (nativo)", "Inglês (intermediário-avançado)"],
+  "email": "gabrieltrugillo@example.com",
+  "github": "https://github.com/gabrieltrugillo",
+  "linkedin": "https://linkedin.com/in/gabriel-trugillo-jaeger",
+  "twitter": "https://twitter.com/gabrieltrugillo"
+}

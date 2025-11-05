@@ -1,0 +1,28 @@
+{
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Research Supervisor",
+      "role": "Professor",
+      "company": "FURG",
+      "content": "Gabriel demonstrated exceptional research ability during his CNPq fellowship. His work on BGP security was methodologically sound and resulted in quality publications. The 'Destaque' award he received was well-deserved recognition of his dedication and analytical skills.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    },
+    {
+      "id": "test-2",
+      "name": "Development Team Lead",
+      "role": "Senior Developer",
+      "company": "OneWeb Soluções Inteligentes",
+      "content": "Gabriel has shown solid growth as a developer intern. He approaches complex ERP logic methodically, asks good questions when needed, and delivers reliable work. His willingness to work with both legacy code and modern practices is valuable to the team.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    },
+    {
+      "id": "test-3",
+      "name": "Project Coordinator",
+      "role": "Coordinator",
+      "company": "e-COO Project - FURG",
+      "content": "Gabriel contributed meaningfully to the e-COO platform, balancing development work with research responsibilities. His technical skills with React and Node.js were solid, and he worked well within the academic project structure. His ability to bridge technical and research work was an asset.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    }
+  ]
+}

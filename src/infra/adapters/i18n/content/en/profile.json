@@ -1,0 +1,31 @@
+{
+  "name": "Gabriel Trugillo Jaeger",
+  "title": "Full-Stack Developer & Network Security Researcher",
+  "taglines": [
+    "Building production systems, publishing research",
+    "Where web development meets network infrastructure",
+    "Code that works. Systems that scale. Research that matters."
+  ],
+  "bio": "I'm a full-stack developer from Rio Grande do Sul, Brazil, with an unusual background: I've published research on network security while building production web applications. This combination isn't accidental—I believe understanding systems from the user interface down to network protocols makes me a better developer.",
+  "about": {
+    "story": "I build web applications and research network infrastructure—two worlds that rarely meet.\n\nRight now, I'm working at OneWeb Soluções Inteligentes, developing ERP systems that handle real business operations. When I write PHP code to manage inventory or process financial transactions, I'm not building demos—I'm building software that actual companies depend on every day. This work taught me that clean code isn't theoretical. It's the difference between systems that survive and technical debt nightmares.\n\nBefore OneWeb, I was a CNPq research fellow at FURG (Federal University of Rio Grande), working on the e-COO project. I built full-stack applications with React, Next.js, and TypeScript while conducting research on network security. That combination—building production apps while researching infrastructure vulnerabilities—shaped how I think about software.\n\nMy research focused on BGP routing and prefix hijacking. If that sounds obscure, here's why it matters: BGP is the protocol that holds the internet together, and it's fundamentally vulnerable. I investigated how attackers can redirect internet traffic by exploiting these vulnerabilities. This work resulted in two published papers presented at ERRC 2023 (Regional School of Computer Networks) and earned a Distinguished Work Award at FURG's Scientific Congress.\n\nMost developers build applications assuming the network layer is safe. My research taught me it's not—and that perspective influences every architectural decision I make.\n\nI'm finishing my degree in System Analysis and Development at Anhanguera (2025) while actively studying software architecture. SOLID principles, Design Patterns, Clean Architecture, Domain-Driven Design—I'm not just reading about these. I'm applying them, questioning them, and figuring out when they help and when they're overkill.\n\nWhat drives me? Building software that's both elegant and resilient. Understanding not just how to make something work, but why it works that way. Thinking in systems, not just features.",
+    "interests": [
+      "Software architecture and design patterns that solve real problems",
+      "Network infrastructure and how it affects application design",
+      "Building production systems that real businesses depend on",
+      "Research methodology and technical writing",
+      "The intersection of theory and practice in software engineering"
+    ],
+    "currently": {
+      "learning": "Clean Architecture and Domain-Driven Design—not just the concepts, but when to apply them. Also studying TDD practices and planning to dive deeper into cloud infrastructure.",
+      "reading": "Technical documentation on architectural patterns, academic papers on distributed systems, and anything that challenges how I think about building software.",
+      "building": "Production ERP features at OneWeb that serve real clients, personal projects with Next.js and TypeScript to explore architectural patterns, and experimenting with AI/ML integration."
+    }
+  },
+  "location": "Rio Grande, RS – Brazil",
+  "languages": ["Portuguese (native)", "English (upper-intermediate)"],
+  "email": "gabrieltrugillo@example.com",
+  "github": "https://github.com/gabrieltrugillo",
+  "linkedin": "https://linkedin.com/in/gabriel-trugillo-jaeger",
+  "twitter": "https://twitter.com/gabrieltrugillo"
+}

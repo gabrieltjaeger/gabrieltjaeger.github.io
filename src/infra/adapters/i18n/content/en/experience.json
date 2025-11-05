@@ -1,0 +1,58 @@
+{
+  "experiences": [
+    {
+      "id": "exp-1",
+      "company": "OneWeb Soluções Inteligentes",
+      "role": "Software Developer Intern",
+      "startDate": "2024-01",
+      "endDate": null,
+      "description": "Building ERP systems that handle real business operations taught me that theory meets reality fast. I work with PHP and CakePHP to develop features for production applications—inventory management, sales processing, financial operations. This isn't tutorial code. When I write a query or implement business logic, real companies depend on it working correctly.",
+      "achievements": [
+        "Developed production features for ERP modules serving active business clients",
+        "Implemented complex business logic for inventory, sales, and financial operations",
+        "Maintained and optimized MySQL and MariaDB databases in production environments",
+        "Learned that clean code isn't a luxury—it's survival when maintaining systems real businesses depend on",
+        "Gained hands-on experience balancing legacy code maintenance with modern development practices"
+      ],
+      "technologies": ["PHP", "CakePHP", "MySQL", "MariaDB", "JavaScript", "Git"],
+      "companyUrl": "https://onewebsolucoes.com.br"
+    },
+    {
+      "id": "exp-2",
+      "company": "FURG - Federal University of Rio Grande",
+      "role": "Full Stack Developer & Research Fellow (CNPq Scholarship)",
+      "startDate": "2022-08",
+      "endDate": "2023-12",
+      "description": "As a CNPq research fellow, I did something unusual: I built production web applications while researching network security. Most developers focus on one or the other. I did both, and that combination changed how I think about building software. I developed the e-COO platform with React and Next.js while investigating how internet routing protocols can be exploited. This work resulted in published research and taught me that understanding infrastructure makes you a better application developer.",
+      "achievements": [
+        "Built full-stack production applications with React, Next.js, TypeScript, Express.js, and Tailwind CSS",
+        "Published two peer-reviewed papers on BGP routing security and prefix hijacking vulnerabilities",
+        "Presented research at ERRC 2023 (Regional School of Computer Networks) at UFRGS",
+        "Received 'Destaque' (Distinguished Work) award for outstanding undergraduate research",
+        "Presented findings at FURG's 32nd Scientific Initiation Congress and 22nd MPU",
+        "Researched how attackers exploit BGP routing to redirect internet traffic—knowledge that shapes how I think about system security",
+        "Learned that most developers build apps assuming the network is safe. My research taught me it's not."
+      ],
+      "technologies": ["React", "Next.js", "TypeScript", "Express.js", "Node.js", "Tailwind CSS", "PostgreSQL", "Git"],
+      "companyUrl": "https://www.furg.br"
+    },
+    {
+      "id": "exp-3",
+      "company": "Academic Research",
+      "role": "Undergraduate Researcher - Network Security",
+      "startDate": "2022-08",
+      "endDate": "2023-12",
+      "description": "I investigated how the internet's fundamental routing protocol—BGP—can be weaponized. Prefix hijacking sounds abstract until you realize it's how attackers can redirect entire networks' traffic. I analyzed these vulnerabilities, documented attack patterns, and published my findings in peer-reviewed conferences. This research earned a Distinguished Work award, but more importantly, it taught me to think about security from the infrastructure up, not just the application layer down.",
+      "achievements": [
+        "Researched BGP routing vulnerabilities and prefix hijacking—how attackers exploit the protocol that holds the internet together",
+        "Analyzed Autonomous System behaviors and documented network security implications",
+        "Published research in SBC (Brazilian Computer Society) proceedings—peer-reviewed, not blog posts",
+        "Presented findings at ERRC 2023, a regional computer networks conference at UFRGS",
+        "Received 'Destaque' award recognizing outstanding undergraduate research",
+        "Developed network infrastructure expertise that most web developers never touch—and it shapes every architectural decision I make"
+      ],
+      "technologies": ["BGP", "Network Analysis", "Python", "R", "Data Visualization", "Research Methodology"],
+      "companyUrl": null
+    }
+  ]
+}

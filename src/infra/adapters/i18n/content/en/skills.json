@@ -1,0 +1,136 @@
+{
+  "skills": [
+    {
+      "name": "PHP",
+      "category": "Languages",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "JavaScript",
+      "category": "Languages",
+      "level": "advanced",
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "TypeScript",
+      "category": "Languages",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Python",
+      "category": "Languages",
+      "level": "intermediate",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "SQL",
+      "category": "Languages",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Next.js",
+      "category": "Frontend",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "HTML/CSS",
+      "category": "Frontend",
+      "level": "advanced",
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "CakePHP",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 1
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Express.js",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "MySQL",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "MariaDB",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 1
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Backend",
+      "level": "intermediate",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "level": "intermediate",
+      "yearsOfExperience": 1
+    },
+    {
+      "name": "Git",
+      "category": "DevOps",
+      "level": "advanced",
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "CI/CD",
+      "category": "DevOps",
+      "level": "intermediate",
+      "yearsOfExperience": 1
+    },
+    {
+      "name": "BGP Routing",
+      "category": "Network",
+      "level": "intermediate",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Network Security",
+      "category": "Network",
+      "level": "intermediate",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "R",
+      "category": "Data & Research",
+      "level": "intermediate",
+      "yearsOfExperience": 2
+    },
+    {
+      "name": "Research Methodology",
+      "category": "Data & Research",
+      "level": "advanced",
+      "yearsOfExperience": 2
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "Common": {
+    "loading": "Loading...",
+    "present": "Present",
+    "less": "Less",
+    "more": "More",
+    "contributions": "{count, plural, one {# contribution} other {# contributions}}",
+    "language": "Language",
+    "english": "English",
+    "portuguese": "Portuguese",
+    "themeToggle": "Toggle theme",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "sendEmail": "Send Email",
+    "minRead": "{count, plural, one {# min read} other {# min read}}"
+  },
+  "Metadata": {
+    "title": "Gabriel Jaeger | Software Architect",
+    "description": "Full-stack software architect specializing in scalable systems, legacy modernization, and clean architecture."
+  },
+  "Navigation": {
+    "brand": "Portfolio",
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "intro": "Hi, my name is",
+    "viewProjects": "View Projects",
+    "getInTouch": "Get In Touch"
+  },
+  "About": {
+    "title": "About Me",
+    "whatILove": "What I Love",
+    "currently": "Currently",
+    "learning": "Learning",
+    "reading": "Reading",
+    "building": "Building"
+  },
+  "Skills": {
+    "title": "Skills & Technologies",
+    "subtitle": "My technical expertise across different domains",
+    "years": "{count, plural, one {# year} other {# years}}"
+  },
+  "Achievements": {
+    "title": "Achievements Unlocked",
+    "subtitle": "Milestones and accomplishments throughout my career",
+    "items": {
+      "earlyAdopter": {
+        "title": "Early Adopter",
+        "description": "Shipped production apps with cutting-edge tech"
+      },
+      "openSourceHero": {
+        "title": "Open Source Hero",
+        "description": "Contributed to 10+ open source projects"
+      },
+      "speedDemon": {
+        "title": "Speed Demon",
+        "description": "Optimized app performance by 300%"
+      },
+      "teamPlayer": {
+        "title": "Team Player",
+        "description": "Mentored 15+ junior developers"
+      },
+      "problemSolver": {
+        "title": "Problem Solver",
+        "description": "Resolved 500+ production issues"
+      },
+      "fullStackMaster": {
+        "title": "Full Stack Master",
+        "description": "Mastered frontend, backend, and DevOps"
+      }
+    }
+  },
+  "ActivityHeatmap": {
+    "title": "Contribution Activity",
+    "subtitle": "My coding activity over the past 12 weeks",
+    "days": {
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    }
+  },
+  "Experience": {
+    "title": "Experience",
+    "achievements": "Key Achievements"
+  },
+  "Projects": {
+    "sectionLabel": "My Work",
+    "title": "Projects",
+    "description": "A showcase of my recent work. Each project represents a unique challenge, from concept to deployment, with real-world impact and measurable results.",
+    "featuredBadge": "Featured Project",
+    "challenge": "The Challenge",
+    "solution": "The Solution",
+    "impact": "Impact & Results",
+    "technologies": "Technologies Used",
+    "viewCode": "View Code",
+    "liveDemo": "Live Demo"
+  },
+  "Stats": {
+    "title": "By The Numbers",
+    "subtitle": "A snapshot of my journey in tech",
+    "yearsExperience": "Years Experience",
+    "projectsShipped": "Projects Shipped",
+    "technologies": "Technologies",
+    "linesOfCode": "Lines of Code",
+    "happyClients": "Happy Clients",
+    "cupsOfCoffee": "Cups of Coffee"
+  },
+  "Testimonials": {
+    "title": "What People Say"
+  },
+  "Blog": {
+    "intro": "Thoughts & Insights",
+    "title": "Blog",
+    "description": "Writing about software engineering, architecture, and lessons learned from building products at scale.",
+    "back": "Back to Blog",
+    "publishedOn": "Published on {date}"
+  },
+  "Contact": {
+    "title": "Get In Touch",
+    "description": "Feel free to reach out for collaborations or just a friendly chat",
+    "information": "Contact Information"
+  },
+  "Footer": {
+    "copyright": "© {year} All rights reserved.",
+    "builtWith": "Built with <Highlight>Next.js</Highlight> and <Highlight>TypeScript</Highlight>"
+  }
+}

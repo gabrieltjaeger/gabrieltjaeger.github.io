@@ -1,0 +1,31 @@
+{
+  "name": "Gabriel Trugillo Jaeger",
+  "title": "Desenvolvedor Full-Stack & Pesquisador em Segurança de Redes",
+  "taglines": [
+    "Construindo sistemas em produção, publicando pesquisas",
+    "Onde desenvolvimento web encontra infraestrutura de redes",
+    "Código que funciona. Sistemas que escalam. Pesquisa que importa."
+  ],
+  "bio": "Sou desenvolvedor full-stack do Rio Grande do Sul, Brasil, com um background incomum: publiquei pesquisas em segurança de redes enquanto construía aplicações web em produção. Essa combinação não é acidental—acredito que entender sistemas desde a interface do usuário até os protocolos de rede me torna um desenvolvedor melhor.",
+  "about": {
+    "story": "Construo aplicações web e pesquiso infraestrutura de redes—dois mundos que raramente se encontram.\n\nAgora estou trabalhando na OneWeb Soluções Inteligentes, desenvolvendo sistemas ERP que lidam com operações empresariais reais. Quando escrevo código PHP para gerenciar estoque ou processar transações financeiras, não estou construindo demos—estou construindo software do qual empresas reais dependem todos os dias. Este trabalho me ensinou que código limpo não é teórico. É a diferença entre sistemas que sobrevivem e pesadelos de dívida técnica.\n\nAntes da OneWeb, fui bolsista CNPq na FURG (Universidade Federal do Rio Grande), trabalhando no projeto e-COO. Construí aplicações full-stack com React, Next.js e TypeScript enquanto conduzia pesquisas sobre segurança de redes. Essa combinação—construir apps em produção enquanto pesquisava vulnerabilidades de infraestrutura—moldou como penso sobre software.\n\nMinha pesquisa focou em roteamento BGP e sequestro de prefixos. Se isso soa obscuro, aqui está por que importa: BGP é o protocolo que mantém a internet unida, e é fundamentalmente vulnerável. Investiguei como atacantes podem redirecionar tráfego da internet explorando essas vulnerabilidades. Este trabalho resultou em dois artigos publicados apresentados na ERRC 2023 (Escola Regional de Redes de Computadores) e recebi o prêmio Destaque no Congresso Científico da FURG.\n\nA maioria dos desenvolvedores constrói aplicações presumindo que a camada de rede é segura. Minha pesquisa me ensinou que não é—e essa perspectiva influencia cada decisão arquitetural que tomo.\n\nEstou finalizando minha graduação em Análise e Desenvolvimento de Sistemas na Anhanguera (2025) enquanto estudo ativamente arquitetura de software. Princípios SOLID, Padrões de Projeto, Clean Architecture, Domain-Driven Design—não estou apenas lendo sobre isso. Estou aplicando, questionando e descobrindo quando ajudam e quando são exagero.\n\nO que me motiva? Construir software que seja tanto elegante quanto resiliente. Entender não apenas como fazer algo funcionar, mas por que funciona daquele jeito. Pensar em sistemas, não apenas em funcionalidades.",
+    "interests": [
+      "Arquitetura de software e padrões de projeto que resolvem problemas reais",
+      "Infraestrutura de redes e como afeta o design de aplicações",
+      "Construção de sistemas em produção dos quais empresas reais dependem",
+      "Metodologia de pesquisa e escrita técnica",
+      "A interseção entre teoria e prática na engenharia de software"
+    ],
+    "currently": {
+      "learning": "Clean Architecture e Domain-Driven Design—não apenas os conceitos, mas quando aplicá-los. Também estudando práticas de TDD e planejando mergulhar mais fundo em infraestrutura em nuvem.",
+      "reading": "Documentação técnica sobre padrões arquiteturais, artigos acadêmicos sobre sistemas distribuídos, e qualquer coisa que desafie como penso sobre construir software.",
+      "building": "Funcionalidades de ERP em produção na OneWeb que servem clientes reais, projetos pessoais com Next.js e TypeScript para explorar padrões arquiteturais, e experimentando com integração de IA/ML."
+    }
+  },
+  "location": "Rio Grande, RS – Brasil",
+  "languages": ["Português (nativo)", "Inglês (intermediário-avançado)"],
+  "email": "gabrieltrugillo@example.com",
+  "github": "https://github.com/gabrieltrugillo",
+  "linkedin": "https://linkedin.com/in/gabriel-trugillo-jaeger",
+  "twitter": "https://twitter.com/gabrieltrugillo"
+}

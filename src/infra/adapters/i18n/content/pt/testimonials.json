@@ -1,0 +1,28 @@
+{
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Orientador de Pesquisa",
+      "role": "Professor",
+      "company": "FURG",
+      "content": "Gabriel demonstrou capacidade excepcional de pesquisa durante sua bolsa CNPq. Seu trabalho sobre segurança BGP foi metodologicamente sólido e resultou em publicações de qualidade. O prêmio 'Destaque' que recebeu foi reconhecimento merecido de sua dedicação e habilidades analíticas.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    },
+    {
+      "id": "test-2",
+      "name": "Líder da Equipe de Desenvolvimento",
+      "role": "Desenvolvedor Sênior",
+      "company": "OneWeb Soluções Inteligentes",
+      "content": "Gabriel mostrou crescimento sólido como estagiário de desenvolvimento. Ele aborda lógica complexa de ERP de forma metódica, faz boas perguntas quando necessário e entrega trabalho confiável. Sua disposição para trabalhar tanto com código legado quanto práticas modernas é valiosa para a equipe.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    },
+    {
+      "id": "test-3",
+      "name": "Coordenador do Projeto",
+      "role": "Coordenador",
+      "company": "Projeto e-COO - FURG",
+      "content": "Gabriel contribuiu significativamente para a plataforma e-COO, balanceando trabalho de desenvolvimento com responsabilidades de pesquisa. Suas habilidades técnicas com React e Node.js foram sólidas, e ele trabalhou bem dentro da estrutura do projeto acadêmico. Sua capacidade de conectar trabalho técnico e de pesquisa foi um diferencial.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    }
+  ]
+}
