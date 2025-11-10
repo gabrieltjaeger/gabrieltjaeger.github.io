@@ -2,6 +2,9 @@ import type { Metadata } from "next"
 import { siteConfig } from "@/infra/config/site-config"
 import { defaultLocale, locales, type Locale } from "@/infra/adapters/i18n/config"
 
+export const siteTagline =
+  "Full-Stack Developer & Network Security Researcher — production software, distributed systems, and security across the stack."
+
 interface MetadataOptions {
   locale?: Locale
   title?: string
@@ -21,7 +24,8 @@ function ensureAbsoluteUrl(pathOrUrl?: string): string | undefined {
 export function buildMetadata(options: MetadataOptions = {}): Metadata {
   const locale = options.locale ?? defaultLocale
   const pageTitle = options.title || siteConfig.title
-  const description = options.description || siteConfig.description
+  const baseDescription = siteConfig.description || siteTagline
+  const description = options.description || baseDescription
   const keywords = Array.from(new Set([...(siteConfig.keywords || []), ...(options.keywords || [])])).filter(Boolean)
   const ogImage = ensureAbsoluteUrl(options.image || siteConfig.defaultOgImage)
   const normalizedPath =

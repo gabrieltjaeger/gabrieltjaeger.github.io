@@ -4,8 +4,7 @@ import { ThemeManagerProvider } from "@/components/ThemeManagerProvider"
 import { defaultLocale, locales, type Locale } from "@/infra/adapters/i18n/config"
 import { buildMetadata } from "@/lib/seo/metadata"
 import { Analytics } from "@vercel/analytics/next"
-import { GeistMono } from "geist/font/mono"
-import { GeistSans } from "geist/font/sans"
+import { body as bodyFont, heading, mono } from "@/lib/theme/fonts"
 import { cookies } from "next/headers"
 import Script from "next/script"
 import type React from "react"
@@ -23,7 +22,11 @@ export default async function RootLayout({
   const lang = cookieLocale && locales.includes(cookieLocale) ? cookieLocale : defaultLocale
 
   return (
-    <html lang={lang} suppressHydrationWarning>
+    <html
+      lang={lang}
+      suppressHydrationWarning
+      className={`${heading.variable} ${bodyFont.variable} ${mono.variable}`}
+    >
       <head>
         <Script id="theme-preload" strategy="beforeInteractive">
           {`
@@ -53,7 +56,7 @@ export default async function RootLayout({
           `}
         </Script>
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="bg-background text-foreground antialiased font-[var(--font-body)]">
         <ThemeManagerProvider>
           {children}
           {process.env.NEXT_PUBLIC_DEBUG_MODE === "true" ? <ThemeDebug /> : null}

@@ -1,54 +1,64 @@
-/* Dark Theme Variables */
+/* Dark theme keeps the cinematic palette with deeper surfaces */
 .dark {
-  --background: color-mix(in srgb, var(--base-moss) 85%, black 15%);
-  --foreground: color-mix(in srgb, var(--base-salmon) 20%, white 80%);
+  --background: #0b1014;
+  --foreground: #f4f4f2;
 
-  --card: color-mix(in srgb, var(--base-moss) 75%, black 25%);
-  --card-foreground: color-mix(in srgb, var(--base-salmon) 20%, white 80%);
+  --card: #12191f;
+  --card-foreground: #f4f4f2;
 
-  --popover: color-mix(in srgb, var(--base-moss) 75%, black 25%);
-  --popover-foreground: color-mix(in srgb, var(--base-salmon) 20%, white 80%);
+  --popover: #12191f;
+  --popover-foreground: #f4f4f2;
 
-  --primary: color-mix(in srgb, var(--base-salmon) 75%, white 25%);
-  --primary-foreground: var(--base-navy);
+  --primary: #4de2f8;
+  --primary-foreground: #04171c;
 
-  --secondary: color-mix(in srgb, var(--base-moss) 65%, var(--base-steel) 35%);
-  --secondary-foreground: white;
+  --secondary: #171f25;
+  --secondary-foreground: #f4f4f2;
 
-  --muted: color-mix(in srgb, var(--base-moss) 65%, black 35%);
-  --muted-foreground: color-mix(in srgb, var(--base-steel) 75%, white 25%);
+  --muted: rgba(244, 244, 242, 0.12);
+  --muted-foreground: rgba(244, 244, 242, 0.7);
 
-  --accent: color-mix(in srgb, var(--base-salmon) 90%, var(--base-amber) 10%);
-  --accent-foreground: var(--base-navy);
+  --accent: #f6b95b;
+  --accent-foreground: #111416;
 
-  --destructive: #ef4444;
-  --destructive-foreground: white;
+  --destructive: #ff6b6b;
+  --destructive-foreground: #111416;
 
-  --success: color-mix(in srgb, var(--base-moss) 85%, var(--base-amber) 15%);
-  --success-foreground: white;
+  --success: #3dd9a3;
+  --success-foreground: #051915;
 
-  --warning: color-mix(in srgb, var(--base-amber) 90%, white 10%);
-  --warning-foreground: var(--base-navy);
+  --warning: #ffce64;
+  --warning-foreground: #111416;
 
-  --info: color-mix(in srgb, var(--base-steel) 65%, white 35%);
-  --info-foreground: var(--base-navy);
+  --info: #4de2f8;
+  --info-foreground: #04171c;
 
-  --border: color-mix(in srgb, var(--base-moss) 55%, var(--base-steel) 45%);
-  --input: color-mix(in srgb, var(--base-moss) 55%, var(--base-steel) 45%);
-  --ring: color-mix(in srgb, var(--base-salmon) 85%, var(--base-amber) 15%);
+  --border: rgba(244, 244, 242, 0.08);
+  --input: rgba(244, 244, 242, 0.12);
+  --ring: #4de2f8;
 
   --radius: 0.5rem;
 
-  --chart-1: color-mix(in srgb, var(--base-salmon) 70%, white 30%);
-  --chart-2: var(--base-moss);
-  --chart-3: var(--base-salmon);
-  --chart-4: var(--base-amber);
-  --chart-5: var(--base-steel);
+  --chart-1: #4de2f8;
+  --chart-2: #3dd9a3;
+  --chart-3: #f6b95b;
+  --chart-4: #a988ff;
+  --chart-5: #7a889a;
 
-  /* Heatmap scale (low -> high) */
-  --heatmap-0: #328f3c;
-  --heatmap-1: #36a546;
-  --heatmap-2: #39bb4f;
-  --heatmap-3: #3ed25a;
-  --heatmap-4: #46e368;
+  --heatmap-0: #132128;
+  --heatmap-1: #1c3a45;
+  --heatmap-2: #24535f;
+  --heatmap-3: #2f7080;
+  --heatmap-4: #3a8fa5;
+
+  --surface-section: #0b1116;
+  --surface-section-deep: #05080a;
+  --surface-glow-cyan: rgba(77, 226, 248, 0.18);
+  --surface-glow-amber: rgba(246, 185, 91, 0.16);
+  --surface-glow-mint: rgba(61, 217, 163, 0.14);
+  --surface-grid-color: rgba(244, 244, 242, 0.08);
+  --surface-card-glass: rgba(18, 25, 31, 0.76);
+  --surface-card-border: rgba(244, 244, 242, 0.08);
+  --surface-text-muted: rgba(244, 244, 242, 0.72);
+  --surface-text-subtle: rgba(244, 244, 242, 0.58);
 }

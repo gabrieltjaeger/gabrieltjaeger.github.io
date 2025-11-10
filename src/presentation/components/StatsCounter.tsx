@@ -45,19 +45,25 @@ export function StatsCounter({ end, duration = 2, suffix = "", prefix = "", labe
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="group relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
+      className="group relative overflow-hidden rounded-xl border p-6 backdrop-blur-md transition-all duration-300 hover:border-primary/60 hover:shadow-lg hover:shadow-primary/20"
+      style={{
+        background: "var(--surface-card-glass)",
+        borderColor: "var(--surface-card-border)",
+      }}
     >
       {/* Glow effect on hover */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/12 via-transparent to-transparent opacity-0 transition-opacity group-hover:opacity-100" />
 
       <div className="relative space-y-2">
-        {icon && <div className="text-primary mb-3">{icon}</div>}
-        <div className="text-4xl font-bold text-foreground">
+        {icon && <div className="text-primary mb-3 drop-shadow-[0_0_12px_rgba(77,226,248,0.35)]">{icon}</div>}
+        <div className="text-4xl font-bold text-foreground drop-shadow-[0_4px_18px_rgba(0,0,0,0.35)]">
           {prefix}
           {new Intl.NumberFormat(locale).format(count)}
           {suffix}
         </div>
-        <div className="text-sm text-muted-foreground">{label}</div>
+        <div className="text-sm" style={{ color: "var(--surface-text-muted)" }}>
+          {label}
+        </div>
       </div>
     </motion.div>
   )

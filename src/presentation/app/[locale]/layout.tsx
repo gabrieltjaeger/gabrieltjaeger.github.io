@@ -12,11 +12,11 @@ import { Suspense } from "react"
 
 interface LocaleLayoutProps {
   children: ReactNode
-  params: { locale: string }
+  params: Promise<{ locale: string }>
 }
 
-export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
-  const { locale: rawLocale } = params
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale: rawLocale } = await params
   const locale = (rawLocale ?? defaultLocale) as Locale
   if (!locales.includes(locale)) {
     return buildMetadata({
@@ -40,7 +40,7 @@ export function generateStaticParams() {
 }
 
 export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
-  const { locale: rawLocale } = params
+  const { locale: rawLocale } = await params
   const locale = (rawLocale ?? defaultLocale) as Locale
 
   if (!locales.includes(locale)) {

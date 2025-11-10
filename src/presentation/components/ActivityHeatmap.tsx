@@ -42,8 +42,23 @@ export function ActivityHeatmap() {
   const dayKeys = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"] as const
 
   return (
-    <section className="py-24 bg-card/50" data-testid="activity-heatmap">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <section className="relative py-24 bg-card/50 overflow-hidden" data-testid="activity-heatmap">
+      <div aria-hidden className="pointer-events-none absolute inset-0">
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(180deg, color-mix(in srgb, var(--surface-section) 90%, transparent) 0%, color-mix(in srgb, var(--surface-section-deep) 96%, transparent) 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-x-0 top-0 h-36"
+          style={{
+            background: "linear-gradient(to bottom, color-mix(in srgb, var(--surface-section) 92%, transparent) 0%, color-mix(in srgb, var(--surface-section) 60%, transparent) 55%, transparent 100%)",
+          }}
+        />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-4 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

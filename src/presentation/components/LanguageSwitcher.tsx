@@ -36,15 +36,19 @@ export function LanguageSwitcher() {
     })
   }
 
+  const getLanguageLabel = (locale: Locale) => {
+    return locale === "en" ? t("english") : t("portuguese")
+  }
+
   return (
     <Select onValueChange={handleChange} value={currentLocale} disabled={isPending}>
       <SelectTrigger className="w-[130px]" aria-label={t("language")}>
-        <SelectValue placeholder={t("language")} />
+        <SelectValue>{getLanguageLabel(currentLocale)}</SelectValue>
       </SelectTrigger>
       <SelectContent>
         {locales.map((locale) => (
           <SelectItem key={locale} value={locale}>
-            {locale === "en" ? t("english") : t("portuguese")}
+            {getLanguageLabel(locale as Locale)}
           </SelectItem>
         ))}
       </SelectContent>

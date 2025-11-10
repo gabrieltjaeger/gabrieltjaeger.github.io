@@ -25,10 +25,10 @@ const fallbackImage = `${fallbackUrl}/placeholder.jpg`
 
 export const siteConfig: SiteConfig = {
   name: process.env.NEXT_PUBLIC_SITE_NAME || "Gabriel Trugillo Jaeger",
-  title: process.env.NEXT_PUBLIC_SITE_TITLE || "Gabriel Jaeger | Software Architect",
+  title: process.env.NEXT_PUBLIC_SITE_TITLE || "Gabriel Jaeger | Architect of Systems",
   description:
     process.env.NEXT_PUBLIC_SITE_DESCRIPTION ||
-    "Portfolio showcasing software architecture, clean code, and scalable systems engineered by Gabriel Trugillo Jaeger.",
+    "Full-Stack Developer & Network Security Researcher — production software, distributed systems, and security across the stack.",
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL || fallbackUrl,
   defaultOgImage: process.env.NEXT_PUBLIC_OG_IMAGE || fallbackImage,
   keywords: (process.env.NEXT_PUBLIC_SITE_KEYWORDS || "")
@@ -56,4 +56,3 @@ export const siteConfig: SiteConfig = {
 export const analyticsConfig = {
   googleAnalyticsId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || null,
 }
-

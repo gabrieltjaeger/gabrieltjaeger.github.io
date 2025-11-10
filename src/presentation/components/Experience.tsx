@@ -31,16 +31,39 @@ export function Experience({ experiences }: ExperienceProps) {
   })
 
   return (
-    <section className="py-24 bg-background relative mesh-bg overflow-hidden">
-      {/* Sharp dots texture overlay */}
-      <div className="absolute inset-0 opacity-20 pointer-events-none">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 1.5px 1.5px, rgba(163, 169, 183, 0.2) 1.5px, transparent 0)',
-          backgroundSize: '28px 28px'
-        }} />
+    <section className="relative py-24 overflow-hidden">
+      <div aria-hidden className="absolute inset-0 pointer-events-none">
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(180deg, var(--surface-section) 0%, var(--surface-section-deep) 100%)" }}
+        />
+        <div
+          className="absolute inset-0 opacity-75"
+          style={{
+            background:
+              "radial-gradient(circle at 12% 18%, var(--surface-glow-cyan) 0%, transparent 55%)," +
+              "radial-gradient(circle at 85% 12%, var(--surface-glow-amber) 0%, transparent 60%)," +
+              "radial-gradient(circle at 50% 100%, var(--surface-glow-mint) 0%, transparent 55%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 opacity-[0.18]"
+          style={{
+            backgroundImage:
+              "linear-gradient(var(--surface-grid-color) 1px, transparent 1px)," +
+              "linear-gradient(90deg, var(--surface-grid-color) 1px, transparent 1px)",
+            backgroundSize: "70px 70px",
+          }}
+        />
+        <div
+          className="absolute inset-x-0 top-0 h-36"
+          style={{
+            background: "linear-gradient(to bottom, var(--surface-section) 0%, color-mix(in srgb, var(--surface-section) 60%, transparent) 55%, transparent 100%)",
+          }}
+        />
       </div>
-      
-      <div className="container mx-auto px-4 max-w-4xl relative z-10">
+
+      <div className="relative z-10 container mx-auto px-4 max-w-4xl">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -80,27 +103,33 @@ export function Experience({ experiences }: ExperienceProps) {
                   )}
                 </motion.div>
 
-                <motion.div 
-                  className="space-y-4 p-6 liquid-glass bg-card transition-all duration-300 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.2)] hover:shadow-[0_8px_20px_-4px_rgba(0,0,0,0.3)] depth-3d overflow-hidden"
+                <motion.div
+                  className="space-y-4 p-6 liquid-glass border backdrop-blur-md transition-all duration-300 shadow-[0_20px_36px_-18px_rgba(0,0,0,0.45)] hover:shadow-[0_24px_48px_-18px_rgba(0,0,0,0.55)] depth-3d overflow-hidden"
                   whileHover={{ x: 4, y: -2 }}
-                  style={{ transform: 'translateZ(0)' }}
+                  style={{
+                    transform: "translateZ(0)",
+                    background: "var(--surface-card-glass)",
+                    borderColor: "var(--surface-card-border)",
+                  }}
                 >
                   {/* Organic distortion - liquid glass refraction */}
-                  <div className="absolute inset-0 pointer-events-none opacity-50" style={{
-                    background: `
-                      radial-gradient(circle at 35% 30%, rgba(255, 255, 255, 0.12) 0%, transparent 28%),
-                      radial-gradient(circle at 70% 75%, rgba(0, 0, 0, 0.06) 0%, transparent 22%)
-                    `,
-                    filter: 'blur(6px)',
-                    borderRadius: 'inherit'
-                  }} />
+                  <div
+                    className="absolute inset-0 pointer-events-none opacity-50"
+                    style={{
+                      background:
+                        `radial-gradient(circle at 35% 30%, var(--surface-glow-cyan) 0%, transparent 32%),` +
+                        `radial-gradient(circle at 70% 75%, var(--surface-glow-amber) 0%, transparent 24%)`,
+                      filter: 'blur(10px)',
+                      borderRadius: 'inherit'
+                    }}
+                  />
                   
                   {/* Header */}
                   <div>
                     <div className="flex items-start justify-between gap-4 flex-wrap">
                       <div>
                         <h3 className="text-xl font-semibold text-foreground">{exp.role}</h3>
-                        <div className="flex items-center gap-2 mt-1">
+                    <div className="flex items-center gap-2 mt-1">
                           {exp.companyUrl ? (
                             <a
                               href={exp.companyUrl}
@@ -116,13 +145,15 @@ export function Experience({ experiences }: ExperienceProps) {
                           )}
                         </div>
                       </div>
-                      <div className="text-sm text-muted-foreground">
+                      <div className="text-sm" style={{ color: "var(--surface-text-subtle)" }}>
                         {dateFormatter.format(new Date(`${exp.startDate}-01`))} -
                         {" "}
                         {exp.endDate ? dateFormatter.format(new Date(`${exp.endDate}-01`)) : common("present")}
                       </div>
                     </div>
-                    <p className="text-muted-foreground mt-3">{exp.description}</p>
+                    <p className="mt-3" style={{ color: "var(--surface-text-muted)" }}>
+                      {exp.description}
+                    </p>
                   </div>
 
                   {/* Achievements */}
@@ -130,7 +161,11 @@ export function Experience({ experiences }: ExperienceProps) {
                     <h4 className="text-sm font-medium text-foreground mb-2">{t("achievements")}</h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <li
+                          key={i}
+                          className="flex items-start gap-2 text-sm"
+                          style={{ color: "var(--surface-text-muted)" }}
+                        >
                           <span className="text-accent mt-1">•</span>
                           <span>{achievement}</span>
                         </li>

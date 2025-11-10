@@ -1,65 +1,70 @@
-/* Light Theme Variables */
+/* Cinematic Graphite – Light Baseline */
 :root {
-  --base-navy: #1E2A44;
-  --base-steel: #A3A9B7;
-  --base-amber: #D9A441;
-  --base-moss: #3c492b;
-  --base-salmon: #E89A8E;
+  --base-navy: #0e1a24;
+  --base-steel: #c8d2dc;
+  --base-amber: #f6b95b;
+  --base-moss: #3aa0b6;
+  --base-salmon: #4de2f8;
 
-  /* Light mode: white/light backgrounds with green accents */
-  --background: color-mix(in srgb, white 100%, transparent);
-  --foreground: color-mix(in srgb, var(--base-navy) 90%, black 10%);
+  --background: #f5f7fb;
+  --foreground: #11161b;
 
-  --card: color-mix(in srgb, white 98%, var(--base-moss) 2%);
-  --card-foreground: color-mix(in srgb, var(--base-navy) 90%, black 10%);
+  --card: #ffffff;
+  --card-foreground: #11161b;
 
-  --popover: color-mix(in srgb, white 100%, transparent);
-  --popover-foreground: color-mix(in srgb, var(--base-navy) 90%, black 10%);
+  --popover: #ffffff;
+  --popover-foreground: #11161b;
 
-  /* WCAG AA compliant: 4.5:1+ contrast ratio */
-  --primary: color-mix(in srgb, var(--base-salmon) 75%, var(--base-navy) 55%);
-  --primary-foreground: white;
+  --primary: #0f6079;
+  --primary-foreground: #f5f7fb;
 
-  --secondary: color-mix(in srgb, var(--base-moss) 15%, white 85%);
-  --secondary-foreground: var(--base-navy);
+  --secondary: #eef2f6;
+  --secondary-foreground: #11161b;
 
-  --muted: color-mix(in srgb, var(--base-steel) 10%, white 90%);
-  /* WCAG AA compliant: darkened further to achieve 4.5:1 contrast */
-  --muted-foreground: color-mix(in srgb, var(--base-navy) 60%, var(--base-steel) 40%);
+  --muted: #e3e9ef;
+  --muted-foreground: rgba(17, 22, 27, 0.62);
 
-  /* WCAG AA compliant: darkened significantly to achieve 4.5:1 contrast */
-  --accent: color-mix(in srgb, var(--base-moss) 65%, var(--base-navy) 35%);
-  --accent-foreground: white;
+  --accent: #d9822b;
+  --accent-foreground: #f5f7fb;
 
-  --destructive: #ef4444;
-  --destructive-foreground: white;
+  --destructive: #d92f3a;
+  --destructive-foreground: #f5f7fb;
 
-  /* WCAG AA compliant: darkened to achieve 3.0:1 contrast for UI components */
-  --success: color-mix(in srgb, var(--base-moss) 75%, black 25%);
-  --success-foreground: white;
+  --success: #15916c;
+  --success-foreground: #f5f7fb;
 
-  --warning: color-mix(in srgb, var(--base-amber) 30%, white 70%);
-  --warning-foreground: var(--base-navy);
+  --warning: #c87507;
+  --warning-foreground: #f5f7fb;
 
-  --info: color-mix(in srgb, var(--base-steel) 25%, white 75%);
-  --info-foreground: var(--base-navy);
+  --info: #0f6079;
+  --info-foreground: #f5f7fb;
 
-  --border: color-mix(in srgb, var(--base-steel) 20%, white 80%);
-  --input: color-mix(in srgb, var(--base-steel) 15%, white 85%);
-  --ring: color-mix(in srgb, var(--base-salmon) 50%, var(--base-amber) 50%);
-
+  --border: rgba(15, 31, 42, 0.16);
+  --input: rgba(15, 31, 42, 0.16);
+  --ring: #0f6079;
   --radius: 0.5rem;
 
-  --chart-1: color-mix(in srgb, var(--base-salmon) 70%, white 30%);
-  --chart-2: var(--base-moss);
-  --chart-3: var(--base-salmon);
-  --chart-4: var(--base-amber);
-  --chart-5: var(--base-steel);
+  --chart-1: #0f6079;
+  --chart-2: #15916c;
+  --chart-3: #d9822b;
+  --chart-4: #855ae3;
+  --chart-5: #506075;
 
-  /* Heatmap scale (low -> high) */
-  --heatmap-0: #0ba360;
-  --heatmap-1: #0f9d58;
-  --heatmap-2: #14532d;
-  --heatmap-3: #1a3a2a;
-  --heatmap-4: #1f2937;
+  --heatmap-0: #dce7f2;
+  --heatmap-1: #c1d6e7;
+  --heatmap-2: #9fc3dd;
+  --heatmap-3: #78aecf;
+  --heatmap-4: #4d96c0;
+
+  /* Section + glass surfaces */
+  --surface-section: #f5f7fb;
+  --surface-section-deep: #ebf1f6;
+  --surface-glow-cyan: rgba(79, 180, 205, 0.32);
+  --surface-glow-amber: rgba(217, 130, 38, 0.28);
+  --surface-glow-mint: rgba(40, 150, 120, 0.22);
+  --surface-grid-color: rgba(17, 22, 27, 0.08);
+  --surface-card-glass: rgba(255, 255, 255, 0.85);
+  --surface-card-border: rgba(17, 22, 27, 0.1);
+  --surface-text-muted: rgba(17, 22, 27, 0.62);
+  --surface-text-subtle: rgba(17, 22, 27, 0.48);
 }

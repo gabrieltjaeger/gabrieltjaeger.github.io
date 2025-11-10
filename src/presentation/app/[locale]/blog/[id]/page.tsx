@@ -2,13 +2,13 @@ import { createPortfolioServices } from "@/application/portfolioServices"
 import { locales, type Locale } from "@/infra/adapters/i18n/config"
 import { Link } from "@/infra/adapters/i18n/routing"
 import { buildMetadata } from "@/lib/seo/metadata"
-import type { Metadata } from "next"
 import { ArrowLeft, Clock } from "lucide-react"
+import type { Metadata } from "next"
 import { getTranslations } from "next-intl/server"
 import { notFound } from "next/navigation"
 
 interface BlogPostPageProps {
-  params: { locale: string; id: string }
+  params: Promise<{ locale: string; id: string }>
 }
 
 export async function generateStaticParams() {
@@ -25,25 +25,26 @@ export async function generateStaticParams() {
   return params
 }
 
-export async function generateMetadata({ params }: { params: { locale: string; id: string } }): Promise<Metadata> {
-  const locale = params.locale as Locale
+export async function generateMetadata({ params }: { params: Promise<{ locale: string; id: string }> }): Promise<Metadata> {
+  const { locale: localeStr, id } = await params
+  const locale = localeStr as Locale
   if (!locales.includes(locale)) {
     return buildMetadata({
       title: "Blog",
       description: "Article",
-      path: `/blog/${params.id}`,
+      path: `/blog/${id}`,
     })
   }
 
   const services = createPortfolioServices(locale)
-  const post = await services.blog.getById(params.id)
+  const post = await services.blog.getById(id)
 
   if (!post) {
     return buildMetadata({
       locale,
       title: "Post not found",
       description: "The requested article is not available.",
-      path: `/blog/${params.id}`,
+      path: `/blog/${id}`,
       robots: {
         index: false,
         follow: false,
@@ -63,7 +64,8 @@ export async function generateMetadata({ params }: { params: { locale: string; i
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
-  const locale = params.locale as Locale
+  const { locale: localeStr, id } = await params
+  const locale = localeStr as Locale
 
   if (!locales.includes(locale)) {
     notFound()
@@ -75,7 +77,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   ])
 
   const services = createPortfolioServices(locale)
-  const post = await services.blog.getById(params.id)
+  const post = await services.blog.getById(id)
 
   if (!post) {
     notFound()
