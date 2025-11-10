@@ -1,0 +1,58 @@
+{
+  "experiences": [
+    {
+      "id": "exp-1",
+      "company": "OneWeb Soluções Inteligentes",
+      "role": "Estagiário de Desenvolvimento de Software",
+      "startDate": "2024-01",
+      "endDate": null,
+      "description": "Construir sistemas ERP que lidam com operações empresariais reais me ensinou que teoria encontra realidade rápido. Trabalho com PHP e CakePHP para desenvolver funcionalidades para aplicações em produção—gerenciamento de estoque, processamento de vendas, operações financeiras. Isso não é código de tutorial. Quando escrevo uma query ou implemento lógica de negócio, empresas reais dependem de funcionar corretamente.",
+      "achievements": [
+        "Desenvolvi funcionalidades em produção para módulos de ERP servindo clientes empresariais ativos",
+        "Implementei lógica de negócio complexa para operações de estoque, vendas e financeiro",
+        "Mantive e otimizei bancos de dados MySQL e MariaDB em ambientes de produção",
+        "Aprendi que código limpo não é luxo—é sobrevivência quando você mantém sistemas dos quais empresas reais dependem",
+        "Ganhei experiência prática balanceando manutenção de código legado com práticas modernas de desenvolvimento"
+      ],
+      "technologies": ["PHP", "CakePHP", "MySQL", "MariaDB", "JavaScript", "Git"],
+      "companyUrl": "https://onewebsolucoes.com.br"
+    },
+    {
+      "id": "exp-2",
+      "company": "FURG - Universidade Federal do Rio Grande",
+      "role": "Desenvolvedor Full Stack & Bolsista de Pesquisa (Bolsa CNPq)",
+      "startDate": "2022-08",
+      "endDate": "2023-12",
+      "description": "Como bolsista CNPq, fiz algo incomum: construí aplicações web em produção enquanto pesquisava segurança de redes. A maioria dos desenvolvedores foca em um ou outro. Eu fiz os dois, e essa combinação mudou como penso sobre construir software. Desenvolvi a plataforma e-COO com React e Next.js enquanto investigava como protocolos de roteamento da internet podem ser explorados. Este trabalho resultou em pesquisas publicadas e me ensinou que entender infraestrutura te torna um desenvolvedor de aplicações melhor.",
+      "achievements": [
+        "Construí aplicações full-stack em produção com React, Next.js, TypeScript, Express.js e Tailwind CSS",
+        "Publiquei dois artigos revisados por pares sobre segurança em roteamento BGP e vulnerabilidades de sequestro de prefixos",
+        "Apresentei pesquisa na ERRC 2023 (Escola Regional de Redes de Computadores) na UFRGS",
+        "Recebi prêmio 'Destaque' por pesquisa de graduação excepcional",
+        "Apresentei resultados no 32º Congresso de Iniciação Científica e 22ª MPU da FURG",
+        "Pesquisei como atacantes exploram roteamento BGP para redirecionar tráfego da internet—conhecimento que molda como penso sobre segurança de sistemas",
+        "Aprendi que a maioria dos desenvolvedores constrói apps presumindo que a rede é segura. Minha pesquisa me ensinou que não é."
+      ],
+      "technologies": ["React", "Next.js", "TypeScript", "Express.js", "Node.js", "Tailwind CSS", "PostgreSQL", "Git"],
+      "companyUrl": "https://www.furg.br"
+    },
+    {
+      "id": "exp-3",
+      "company": "Pesquisa Acadêmica",
+      "role": "Pesquisador de Graduação - Segurança de Redes",
+      "startDate": "2022-08",
+      "endDate": "2023-12",
+      "description": "Investiguei como o protocolo fundamental de roteamento da internet—BGP—pode ser transformado em arma. Sequestro de prefixos soa abstrato até você perceber que é como atacantes podem redirecionar o tráfego de redes inteiras. Analisei essas vulnerabilidades, documentei padrões de ataque e publiquei minhas descobertas em conferências revisadas por pares. Esta pesquisa recebeu um prêmio de Trabalho Destaque, mas mais importante, me ensinou a pensar sobre segurança desde a infraestrutura para cima, não apenas da camada de aplicação para baixo.",
+      "achievements": [
+        "Pesquisei vulnerabilidades de roteamento BGP e sequestro de prefixos—como atacantes exploram o protocolo que mantém a internet unida",
+        "Analisei comportamentos de Sistemas Autônomos e documentei implicações de segurança de rede",
+        "Publiquei pesquisa nos anais da SBC (Sociedade Brasileira de Computação)—revisada por pares, não posts de blog",
+        "Apresentei resultados na ERRC 2023, conferência regional de redes de computadores na UFRGS",
+        "Recebi prêmio 'Destaque' reconhecendo pesquisa de graduação excepcional",
+        "Desenvolvi expertise em infraestrutura de redes que a maioria dos desenvolvedores web nunca toca—e isso molda cada decisão arquitetural que tomo"
+      ],
+      "technologies": ["BGP", "Análise de Redes", "Python", "R", "Visualização de Dados", "Metodologia de Pesquisa"],
+      "companyUrl": null
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "Common": {
+    "loading": "Carregando...",
+    "present": "Atualmente",
+    "less": "Menos",
+    "more": "Mais",
+    "contributions": "{count, plural, one {# contribuição} other {# contribuições}}",
+    "language": "Idioma",
+    "english": "Inglês",
+    "portuguese": "Português",
+    "themeToggle": "Alternar tema",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "sendEmail": "Enviar email",
+    "minRead": "{count, plural, one {# min de leitura} other {# min de leitura}}"
+  },
+  "Metadata": {
+    "title": "Gabriel Jaeger | Arquiteto de Software",
+    "description": "Arquiteto full-stack especializado em sistemas escaláveis, modernização de legados e clean architecture."
+  },
+  "Navigation": {
+    "brand": "Portfólio",
+    "home": "Início",
+    "projects": "Projetos",
+    "blog": "Blog",
+    "contact": "Contato"
+  },
+  "Hero": {
+    "intro": "Olá, meu nome é",
+    "viewProjects": "Ver projetos",
+    "getInTouch": "Fale comigo"
+  },
+  "About": {
+    "title": "Sobre mim",
+    "whatILove": "O que eu amo",
+    "currently": "No momento",
+    "learning": "Estudando",
+    "reading": "Lendo",
+    "building": "Construindo"
+  },
+  "Skills": {
+    "title": "Habilidades e Tecnologias",
+    "subtitle": "Minha especialidade técnica em diferentes domínios",
+    "years": "{count, plural, one {# ano} other {# anos}}"
+  },
+  "Achievements": {
+    "title": "Conquistas desbloqueadas",
+    "subtitle": "Marcos e resultados da minha trajetória",
+    "items": {
+      "earlyAdopter": {
+        "title": "Early Adopter",
+        "description": "Levei tecnologias de ponta para produção"
+      },
+      "openSourceHero": {
+        "title": "Herói do Open Source",
+        "description": "Contribuí com mais de 10 projetos open source"
+      },
+      "speedDemon": {
+        "title": "Speed Demon",
+        "description": "Otimizei performance de apps em 300%"
+      },
+      "teamPlayer": {
+        "title": "Jogador de Time",
+        "description": "Mentorei mais de 15 desenvolvedores juniores"
+      },
+      "problemSolver": {
+        "title": "Resolvedor de Problemas",
+        "description": "Solucionei mais de 500 incidentes em produção"
+      },
+      "fullStackMaster": {
+        "title": "Full Stack Master",
+        "description": "Domínio de frontend, backend e DevOps"
+      }
+    }
+  },
+  "ActivityHeatmap": {
+    "title": "Atividade de Contribuições",
+    "subtitle": "Minha atividade de código nas últimas 12 semanas",
+    "days": {
+      "sun": "Dom",
+      "mon": "Seg",
+      "tue": "Ter",
+      "wed": "Qua",
+      "thu": "Qui",
+      "fri": "Sex",
+      "sat": "Sáb"
+    }
+  },
+  "Experience": {
+    "title": "Experiência",
+    "achievements": "Principais conquistas"
+  },
+  "Projects": {
+    "sectionLabel": "Meu trabalho",
+    "title": "Projetos",
+    "description": "Uma vitrine dos meus projetos recentes. Cada entrega representa um desafio único, do conceito ao deploy, com impacto real e resultados mensuráveis.",
+    "featuredBadge": "Projeto em destaque",
+    "challenge": "O desafio",
+    "solution": "A solução",
+    "impact": "Impacto e resultados",
+    "technologies": "Tecnologias utilizadas",
+    "viewCode": "Ver código",
+    "liveDemo": "Ver demo"
+  },
+  "Stats": {
+    "title": "Em números",
+    "subtitle": "Um panorama da minha jornada em tecnologia",
+    "yearsExperience": "Anos de experiência",
+    "projectsShipped": "Projetos entregues",
+    "technologies": "Tecnologias",
+    "linesOfCode": "Linhas de código",
+    "happyClients": "Clientes satisfeitos",
+    "cupsOfCoffee": "Xícaras de café"
+  },
+  "Testimonials": {
+    "title": "O que dizem"
+  },
+  "Blog": {
+    "intro": "Reflexões e insights",
+    "title": "Blog",
+    "description": "Escrevo sobre engenharia de software, arquitetura e lições de produtos em escala.",
+    "back": "Voltar ao blog",
+    "publishedOn": "Publicado em {date}"
+  },
+  "Contact": {
+    "title": "Fale comigo",
+    "description": "Entre em contato para colaborar ou simplesmente trocar uma ideia",
+    "information": "Informações de contato"
+  },
+  "Footer": {
+    "copyright": "© {year} Todos os direitos reservados.",
+    "builtWith": "Feito com <Highlight>Next.js</Highlight> e <Highlight>TypeScript</Highlight>"
+  }
+}

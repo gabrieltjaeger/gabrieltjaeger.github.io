@@ -1,0 +1,70 @@
+/* Cinematic Graphite – Light Baseline */
+:root {
+  --base-navy: #0e1a24;
+  --base-steel: #c8d2dc;
+  --base-amber: #f6b95b;
+  --base-moss: #3aa0b6;
+  --base-salmon: #4de2f8;
+
+  --background: #f5f7fb;
+  --foreground: #11161b;
+
+  --card: #ffffff;
+  --card-foreground: #11161b;
+
+  --popover: #ffffff;
+  --popover-foreground: #11161b;
+
+  --primary: #0f6079;
+  --primary-foreground: #f5f7fb;
+
+  --secondary: #eef2f6;
+  --secondary-foreground: #11161b;
+
+  --muted: #e3e9ef;
+  --muted-foreground: rgba(17, 22, 27, 0.62);
+
+  --accent: #d9822b;
+  --accent-foreground: #f5f7fb;
+
+  --destructive: #d92f3a;
+  --destructive-foreground: #f5f7fb;
+
+  --success: #15916c;
+  --success-foreground: #f5f7fb;
+
+  --warning: #c87507;
+  --warning-foreground: #f5f7fb;
+
+  --info: #0f6079;
+  --info-foreground: #f5f7fb;
+
+  --border: rgba(15, 31, 42, 0.16);
+  --input: rgba(15, 31, 42, 0.16);
+  --ring: #0f6079;
+  --radius: 0.5rem;
+
+  --chart-1: #0f6079;
+  --chart-2: #15916c;
+  --chart-3: #d9822b;
+  --chart-4: #855ae3;
+  --chart-5: #506075;
+
+  --heatmap-0: #dce7f2;
+  --heatmap-1: #c1d6e7;
+  --heatmap-2: #9fc3dd;
+  --heatmap-3: #78aecf;
+  --heatmap-4: #4d96c0;
+
+  /* Section + glass surfaces */
+  --surface-section: #f5f7fb;
+  --surface-section-deep: #ebf1f6;
+  --surface-glow-cyan: rgba(79, 180, 205, 0.32);
+  --surface-glow-amber: rgba(217, 130, 38, 0.28);
+  --surface-glow-mint: rgba(40, 150, 120, 0.22);
+  --surface-grid-color: rgba(17, 22, 27, 0.08);
+  --surface-card-glass: rgba(255, 255, 255, 0.85);
+  --surface-card-border: rgba(17, 22, 27, 0.1);
+  --surface-text-muted: rgba(17, 22, 27, 0.62);
+  --surface-text-subtle: rgba(17, 22, 27, 0.48);
+}

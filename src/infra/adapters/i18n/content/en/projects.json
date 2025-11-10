@@ -1,0 +1,101 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Network Security Research - BGP Routing & Prefix Hijacking",
+      "description": "Published research on BGP routing security vulnerabilities and prefix hijacking detection in Autonomous Systems.",
+      "longDescription": "Academic research project investigating security vulnerabilities in BGP (Border Gateway Protocol) routing and analyzing prefix hijacking attacks. This work resulted in two published papers presented at regional and university conferences.",
+      "challenge": "BGP routing protocols are fundamental to internet infrastructure but contain inherent security vulnerabilities. Prefix hijacking can redirect traffic maliciously, affecting entire networks. Understanding and documenting these vulnerabilities is critical for network security.",
+      "solution": "Conducted systematic analysis of BGP routing behaviors, traffic engineering patterns, and security implications across Autonomous Systems. Used Python and R for data analysis and visualization. Documented findings through rigorous academic methodology.",
+      "results": [
+        "Published two peer-reviewed papers in SBC (Brazilian Computer Society) proceedings",
+        "Presented research at ERRC 2023 (Regional School of Computer Networks) at UFRGS",
+        "Awarded 'Destaque' (Distinguished Work) for excellence in Exact and Earth Sciences",
+        "Presented at 32nd Scientific Initiation Congress and 22nd MPU at FURG"
+      ],
+      "technologies": ["BGP", "Python", "R", "Network Analysis", "Data Visualization", "Research Methodology"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "2 publications",
+        "users": "Award winner",
+        "duration": "16 months"
+      }
+    },
+    {
+      "id": "project-2",
+      "title": "e-COO Platform - FURG",
+      "description": "Full-stack web application connecting rural producers to consumers, built as CNPq research fellow.",
+      "longDescription": "Production application developed for the e-COO project at Federal University of Rio Grande. This platform facilitates connections between rural agricultural producers and urban consumers, supporting local economy and sustainable food systems.",
+      "challenge": "Rural producers needed a digital platform to reach consumers directly, reducing intermediary costs and improving market access. The system required real-time inventory management, order processing, and user authentication.",
+      "solution": "Built a modern full-stack application using React and Next.js for the frontend, Express.js for the backend API, and PostgreSQL for data persistence. Implemented responsive design with Tailwind CSS and TypeScript for type safety across the codebase.",
+      "results": [
+        "Deployed production application serving real users",
+        "Connected rural producers with urban consumers",
+        "Built as CNPq scholarship recipient (competitive research fellowship)",
+        "Gained experience with full software development lifecycle"
+      ],
+      "technologies": ["React", "Next.js", "TypeScript", "Express.js", "Node.js", "PostgreSQL", "Tailwind CSS", "Git"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "CNPq project",
+        "users": "Production app",
+        "duration": "16 months"
+      }
+    },
+    {
+      "id": "project-3",
+      "title": "ERP System Development - OneWeb",
+      "description": "Production ERP features for inventory, sales, and financial modules serving active business clients.",
+      "longDescription": "Professional work on enterprise resource planning (ERP) systems at OneWeb Soluções Inteligentes. Developing and maintaining production features that real businesses depend on for daily operations.",
+      "challenge": "ERP systems require complex business logic, data integrity across multiple modules, and reliability for mission-critical operations. Working with both legacy CakePHP code and modern development practices.",
+      "solution": "Implement features for inventory management, sales processing, and financial operations using PHP, CakePHP framework, and MySQL/MariaDB databases. Collaborate with team to deliver client-requested functionality on schedule.",
+      "results": [
+        "Delivered production features serving active clients",
+        "Maintained complex business logic for enterprise operations",
+        "Worked with MySQL and MariaDB in production environments",
+        "Gained experience with legacy systems and modern development practices"
+      ],
+      "technologies": ["PHP", "CakePHP", "MySQL", "MariaDB", "JavaScript", "Git"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "ERP systems",
+        "users": "Active clients",
+        "duration": "10 months+"
+      }
+    },
+    {
+      "id": "project-4",
+      "title": "Personal Portfolio - Modern Architecture",
+      "description": "Production portfolio site built with Next.js, TypeScript, and Clean Architecture principles.",
+      "longDescription": "Personal portfolio website showcasing real work and research. Built with modern web technologies and architectural patterns including Clean Architecture, DDD concepts, and comprehensive testing.",
+      "challenge": "Create a portfolio that not only displays work but demonstrates advanced architectural thinking. Implement WCAG accessibility standards, internationalization, theme switching, and comprehensive testing.",
+      "solution": "Architected using Clean Architecture with clear separation of concerns: entities, use cases, adapters, and presentation layers. Implemented with Next.js 14, TypeScript, Tailwind CSS, and tested with Vitest, Playwright, and Cypress.",
+      "results": [
+        "Full implementation of Clean Architecture principles",
+        "WCAG AAA color contrast compliance",
+        "Internationalization support (English/Portuguese)",
+        "Comprehensive test coverage (unit, integration, e2e)",
+        "Production deployment with CI/CD"
+      ],
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Vitest", "Playwright", "Cypress", "Clean Architecture"],
+      "githubUrl": "https://github.com/gabrieltjaeger/gabrieltjaeger.github.io",
+      "liveUrl": "https://gabrieltjaeger.github.io",
+      "featured": false,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "Clean Arch",
+        "users": "Portfolio site",
+        "duration": "3 months"
+      }
+    }
+  ]
+}

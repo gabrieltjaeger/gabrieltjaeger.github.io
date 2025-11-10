@@ -1,0 +1,64 @@
+/* Dark theme keeps the cinematic palette with deeper surfaces */
+.dark {
+  --background: #0b1014;
+  --foreground: #f4f4f2;
+
+  --card: #12191f;
+  --card-foreground: #f4f4f2;
+
+  --popover: #12191f;
+  --popover-foreground: #f4f4f2;
+
+  --primary: #4de2f8;
+  --primary-foreground: #04171c;
+
+  --secondary: #171f25;
+  --secondary-foreground: #f4f4f2;
+
+  --muted: rgba(244, 244, 242, 0.12);
+  --muted-foreground: rgba(244, 244, 242, 0.7);
+
+  --accent: #f6b95b;
+  --accent-foreground: #111416;
+
+  --destructive: #ff6b6b;
+  --destructive-foreground: #111416;
+
+  --success: #3dd9a3;
+  --success-foreground: #051915;
+
+  --warning: #ffce64;
+  --warning-foreground: #111416;
+
+  --info: #4de2f8;
+  --info-foreground: #04171c;
+
+  --border: rgba(244, 244, 242, 0.08);
+  --input: rgba(244, 244, 242, 0.12);
+  --ring: #4de2f8;
+
+  --radius: 0.5rem;
+
+  --chart-1: #4de2f8;
+  --chart-2: #3dd9a3;
+  --chart-3: #f6b95b;
+  --chart-4: #a988ff;
+  --chart-5: #7a889a;
+
+  --heatmap-0: #132128;
+  --heatmap-1: #1c3a45;
+  --heatmap-2: #24535f;
+  --heatmap-3: #2f7080;
+  --heatmap-4: #3a8fa5;
+
+  --surface-section: #0b1116;
+  --surface-section-deep: #05080a;
+  --surface-glow-cyan: rgba(77, 226, 248, 0.18);
+  --surface-glow-amber: rgba(246, 185, 91, 0.16);
+  --surface-glow-mint: rgba(61, 217, 163, 0.14);
+  --surface-grid-color: rgba(244, 244, 242, 0.08);
+  --surface-card-glass: rgba(18, 25, 31, 0.76);
+  --surface-card-border: rgba(244, 244, 242, 0.08);
+  --surface-text-muted: rgba(244, 244, 242, 0.72);
+  --surface-text-subtle: rgba(244, 244, 242, 0.58);
+}

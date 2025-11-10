@@ -1,0 +1,31 @@
+{
+  "posts": [
+    {
+      "id": "post-1",
+      "title": "Building Scalable Real-Time Applications with WebSockets",
+      "excerpt": "Learn how to architect real-time features that can handle thousands of concurrent connections without breaking a sweat.",
+      "content": "Real-time features are no longer a luxury—they're an expectation. Users want instant updates, live collaboration, and seamless synchronization across devices. But building real-time applications that scale is challenging.\n\nIn this article, I'll share lessons learned from building CollabSpace, a real-time collaboration platform serving 10,000+ concurrent users.\n\n## The Challenge\n\nWhen we started, our WebSocket server could barely handle 100 concurrent connections before performance degraded. We needed to scale 100x while maintaining sub-100ms latency.\n\n## The Solution\n\n### 1. Horizontal Scaling with Redis Pub/Sub\n\nWe implemented a Redis pub/sub layer to enable communication between multiple WebSocket servers. This allowed us to scale horizontally by adding more servers.\n\n### 2. Connection Pooling\n\nWe implemented intelligent connection pooling to reuse database connections and reduce overhead.\n\n### 3. Message Batching\n\nInstead of sending individual updates, we batch messages and send them every 50ms. This reduced network overhead by 80%.\n\n### 4. Selective Broadcasting\n\nWe only broadcast updates to users who need them, using room-based subscriptions.\n\n## Results\n\nThese optimizations allowed us to scale from 100 to 10,000+ concurrent connections while maintaining <100ms latency. Our server costs only increased by 3x despite 100x traffic growth.\n\n## Key Takeaways\n\n- Start with a solid architecture that can scale horizontally\n- Use Redis for inter-server communication\n- Batch messages to reduce network overhead\n- Only send updates to users who need them\n- Monitor performance metrics religiously\n\nBuilding real-time applications is challenging, but with the right architecture, you can create experiences that delight users at scale.",
+      "publishedAt": "2024-03-15",
+      "tags": ["WebSockets", "Scalability", "Architecture", "Real-time"],
+      "readingTime": 8
+    },
+    {
+      "id": "post-2",
+      "title": "The Art of Writing Clean, Maintainable Code",
+      "excerpt": "Clean code isn't just about following rules—it's about writing code that your future self (and your teammates) will thank you for.",
+      "content": "After 8 years of writing code professionally, I've learned that the best code isn't the cleverest—it's the most maintainable.\n\n## What is Clean Code?\n\nClean code is code that is easy to read, understand, and modify. It's self-documenting, well-structured, and follows consistent patterns.\n\n## Principles I Follow\n\n### 1. Write Code for Humans, Not Computers\n\nYour code will be read 10x more than it's written. Optimize for readability.\n\n### 2. Keep Functions Small and Focused\n\nEach function should do one thing and do it well. If you can't describe what a function does in one sentence, it's probably doing too much.\n\n### 3. Use Meaningful Names\n\nVariable and function names should reveal intent. `getUserById` is better than `get`.\n\n### 4. Avoid Deep Nesting\n\nDeep nesting makes code hard to follow. Use early returns and guard clauses.\n\n### 5. Write Tests\n\nTests are documentation that never goes out of date. They give you confidence to refactor.\n\n## Real-World Example\n\nHere's a before/after from a recent refactoring:\n\n**Before:**\n```typescript\nfunction process(data: any) {\n  if (data) {\n    if (data.user) {\n      if (data.user.email) {\n        // ... 50 lines of code\n      }\n    }\n  }\n}\n```\n\n**After:**\n```typescript\nfunction processUserEmail(data: UserData) {\n  if (!data?.user?.email) return;\n  \n  const email = data.user.email;\n  // ... clean, flat code\n}\n```\n\n## Conclusion\n\nWriting clean code is a skill that improves with practice. Start small—refactor one function today. Your future self will thank you.",
+      "publishedAt": "2024-02-28",
+      "tags": ["Clean Code", "Best Practices", "Software Engineering"],
+      "readingTime": 6
+    },
+    {
+      "id": "post-3",
+      "title": "From Monolith to Microservices: Lessons Learned",
+      "excerpt": "Migrating from a monolith to microservices is challenging. Here's what worked (and what didn't) in our journey.",
+      "content": "Last year, we migrated our monolithic application to microservices. It was one of the most challenging projects I've worked on, but it transformed how we ship software.\n\n## Why We Migrated\n\nOur monolith had grown to 200K+ lines of code. Deployments took 2 hours, and a bug in one feature could bring down the entire application.\n\n## The Strategy\n\n### 1. Start with the Strangler Pattern\n\nWe didn't rewrite everything at once. We gradually extracted services, starting with the least critical features.\n\n### 2. Define Clear Boundaries\n\nWe used Domain-Driven Design to identify bounded contexts and service boundaries.\n\n### 3. Invest in Infrastructure\n\nWe set up Docker, Kubernetes, and a service mesh before migrating any code.\n\n### 4. Implement Observability\n\nWe added logging, metrics, and tracing to every service from day one.\n\n## What Went Well\n\n- Deployment frequency increased from 1/week to 10/day\n- Team autonomy improved—teams could ship independently\n- System resilience improved—failures were isolated\n\n## What Didn't Go Well\n\n- Initial complexity was overwhelming\n- Debugging distributed systems was harder\n- Network latency became a concern\n\n## Key Lessons\n\n1. Don't migrate unless you have a clear reason\n2. Start small and iterate\n3. Invest heavily in tooling and observability\n4. Document everything—service boundaries, APIs, dependencies\n5. Microservices aren't a silver bullet\n\n## Conclusion\n\nMicroservices solved our scaling problems, but they introduced new complexity. The key is understanding the tradeoffs and having the right infrastructure in place.",
+      "publishedAt": "2024-01-20",
+      "tags": ["Microservices", "Architecture", "DevOps", "Migration"],
+      "readingTime": 10
+    }
+  ]
+}

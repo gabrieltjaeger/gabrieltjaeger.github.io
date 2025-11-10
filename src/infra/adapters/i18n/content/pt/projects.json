@@ -1,0 +1,101 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Pesquisa em Segurança de Redes - Roteamento BGP & Sequestro de Prefixos",
+      "description": "Pesquisa publicada sobre vulnerabilidades de segurança em roteamento BGP e detecção de sequestro de prefixos em Sistemas Autônomos.",
+      "longDescription": "Projeto de pesquisa acadêmica investigando vulnerabilidades de segurança em protocolos de roteamento BGP e analisando ataques de sequestro de prefixos. Este trabalho resultou em dois artigos publicados apresentados em conferências regionais e universitárias.",
+      "challenge": "Protocolos de roteamento BGP são fundamentais para a infraestrutura da internet, mas contêm vulnerabilidades de segurança inerentes. Sequestro de prefixos pode redirecionar tráfego maliciosamente, afetando redes inteiras. Compreender e documentar essas vulnerabilidades é crítico para a segurança de redes.",
+      "solution": "Conduzi análise sistemática de comportamentos de roteamento BGP, padrões de engenharia de tráfego e implicações de segurança em Sistemas Autônomos. Usei Python e R para análise de dados e visualização. Documentei descobertas através de metodologia acadêmica rigorosa.",
+      "results": [
+        "Publiquei dois artigos revisados por pares nos anais da SBC (Sociedade Brasileira de Computação)",
+        "Apresentei pesquisa na ERRC 2023 (Escola Regional de Redes de Computadores) na UFRGS",
+        "Premiado com 'Destaque' por excelência em Ciências Exatas e da Terra",
+        "Apresentei no 32º Congresso de Iniciação Científica e 22ª MPU na FURG"
+      ],
+      "technologies": ["BGP", "Python", "R", "Análise de Redes", "Visualização de Dados", "Metodologia de Pesquisa"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "2 publicações",
+        "users": "Premiado",
+        "duration": "16 meses"
+      }
+    },
+    {
+      "id": "project-2",
+      "title": "Plataforma e-COO - FURG",
+      "description": "Aplicação web full-stack conectando produtores rurais a consumidores, construída como bolsista CNPq.",
+      "longDescription": "Aplicação em produção desenvolvida para o projeto e-COO na Universidade Federal do Rio Grande. Esta plataforma facilita conexões entre produtores rurais agrícolas e consumidores urbanos, apoiando a economia local e sistemas alimentares sustentáveis.",
+      "challenge": "Produtores rurais precisavam de uma plataforma digital para alcançar consumidores diretamente, reduzindo custos de intermediação e melhorando acesso ao mercado. O sistema exigia gerenciamento de inventário em tempo real, processamento de pedidos e autenticação de usuários.",
+      "solution": "Construí uma aplicação full-stack moderna usando React e Next.js para o frontend, Express.js para a API backend e PostgreSQL para persistência de dados. Implementei design responsivo com Tailwind CSS e TypeScript para segurança de tipos em toda a base de código.",
+      "results": [
+        "Implantei aplicação em produção servindo usuários reais",
+        "Conectei produtores rurais com consumidores urbanos",
+        "Construído como bolsista CNPq (bolsa de pesquisa competitiva)",
+        "Ganhei experiência com ciclo completo de desenvolvimento de software"
+      ],
+      "technologies": ["React", "Next.js", "TypeScript", "Express.js", "Node.js", "PostgreSQL", "Tailwind CSS", "Git"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "Projeto CNPq",
+        "users": "App produção",
+        "duration": "16 meses"
+      }
+    },
+    {
+      "id": "project-3",
+      "title": "Desenvolvimento de Sistema ERP - OneWeb",
+      "description": "Funcionalidades de ERP em produção para módulos de estoque, vendas e financeiro servindo clientes empresariais ativos.",
+      "longDescription": "Trabalho profissional em sistemas de planejamento de recursos empresariais (ERP) na OneWeb Soluções Inteligentes. Desenvolvendo e mantendo funcionalidades em produção das quais empresas reais dependem para operações diárias.",
+      "challenge": "Sistemas ERP exigem lógica de negócio complexa, integridade de dados entre múltiplos módulos e confiabilidade para operações críticas. Trabalhando tanto com código legado CakePHP quanto práticas de desenvolvimento modernas.",
+      "solution": "Implemento funcionalidades para gerenciamento de estoque, processamento de vendas e operações financeiras usando PHP, framework CakePHP e bancos de dados MySQL/MariaDB. Colaboro com a equipe para entregar funcionalidades solicitadas por clientes no prazo.",
+      "results": [
+        "Entreguei funcionalidades em produção servindo clientes ativos",
+        "Mantive lógica de negócio complexa para operações empresariais",
+        "Trabalhei com MySQL e MariaDB em ambientes de produção",
+        "Ganhei experiência com sistemas legados e práticas de desenvolvimento modernas"
+      ],
+      "technologies": ["PHP", "CakePHP", "MySQL", "MariaDB", "JavaScript", "Git"],
+      "githubUrl": null,
+      "liveUrl": null,
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "Sistemas ERP",
+        "users": "Clientes ativos",
+        "duration": "10 meses+"
+      }
+    },
+    {
+      "id": "project-4",
+      "title": "Portfólio Pessoal - Arquitetura Moderna",
+      "description": "Site de portfólio em produção construído com Next.js, TypeScript e princípios de Clean Architecture.",
+      "longDescription": "Site de portfólio pessoal mostrando trabalhos e pesquisas reais. Construído com tecnologias web modernas e padrões arquiteturais incluindo Clean Architecture, conceitos de DDD e testes abrangentes.",
+      "challenge": "Criar um portfólio que não apenas exibe trabalhos mas demonstra pensamento arquitetural avançado. Implementar padrões de acessibilidade WCAG, internacionalização, troca de temas e testes abrangentes.",
+      "solution": "Arquitetado usando Clean Architecture com clara separação de responsabilidades: entidades, casos de uso, adaptadores e camadas de apresentação. Implementado com Next.js 14, TypeScript, Tailwind CSS e testado com Vitest, Playwright e Cypress.",
+      "results": [
+        "Implementação completa de princípios de Clean Architecture",
+        "Conformidade WCAG AAA para contraste de cores",
+        "Suporte a internacionalização (Inglês/Português)",
+        "Cobertura abrangente de testes (unitários, integração, e2e)",
+        "Implantação em produção com CI/CD"
+      ],
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Vitest", "Playwright", "Cypress", "Clean Architecture"],
+      "githubUrl": "https://github.com/gabrieltjaeger/gabrieltjaeger.github.io",
+      "liveUrl": "https://gabrieltjaeger.github.io",
+      "featured": false,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "Clean Arch",
+        "users": "Site portfólio",
+        "duration": "3 meses"
+      }
+    }
+  ]
+}

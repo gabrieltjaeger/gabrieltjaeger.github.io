@@ -1,0 +1,28 @@
+{
+  "testimonials": [
+    {
+      "id": "test-1",
+      "name": "Sarah Chen",
+      "role": "Product Manager",
+      "company": "TechCorp",
+      "content": "Alex is one of the most talented engineers I've worked with. They have an incredible ability to understand complex requirements and translate them into elegant solutions. Their code is always clean, well-documented, and maintainable.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    },
+    {
+      "id": "test-2",
+      "name": "Michael Torres",
+      "role": "CTO",
+      "company": "StartupXYZ",
+      "content": "Alex was instrumental in scaling our platform from 0 to 100K users. Their technical expertise and problem-solving skills are exceptional. They're also a great mentor who helped level up our entire engineering team.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    },
+    {
+      "id": "test-3",
+      "name": "Emily Rodriguez",
+      "role": "Senior Designer",
+      "company": "Digital Agency Co",
+      "content": "Working with Alex was a dream. They have a rare combination of technical skill and design sensibility. Every implementation was pixel-perfect, and they always brought thoughtful suggestions to improve the user experience.",
+      "avatarUrl": "/placeholder.svg?height=80&width=80"
+    }
+  ]
+}

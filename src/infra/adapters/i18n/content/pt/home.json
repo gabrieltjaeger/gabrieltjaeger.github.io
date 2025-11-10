@@ -1,0 +1,13 @@
+{
+  "hero": {
+    "title": "Gabriel Trugillo Jaeger",
+    "role": "Desenvolvedor Full-Stack e Pesquisador em Segurança de Redes",
+    "kicker": "Construo software em produção para organizações reais — e estudo os sistemas que tornam a internet confiável e segura. Meu trabalho conecta engenharia de aplicações, comportamento de infraestrutura e segurança de redes.",
+    "ctaLabel": "Ver Projetos",
+    "ctaHref": "/projetos"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "content": "Sou Gabriel Jaeger, um desenvolvedor full-stack e pesquisador em segurança de redes com paixão por construir software robusto e explorar as complexidades da segurança na internet. Com formação em ciência da computação e experiência prática tanto em desenvolvimento quanto em pesquisa, prospero na interseção entre engenharia de aplicações e segurança de redes. Meu trabalho foca na criação de aplicações escaláveis enquanto investigo os sistemas que garantem a confiabilidade e segurança da internet. Gosto de colaborar com equipes multifuncionais para entregar soluções que não são apenas funcionais, mas também seguras e eficientes."
+  }
+}

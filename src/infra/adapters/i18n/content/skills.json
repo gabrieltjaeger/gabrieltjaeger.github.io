@@ -1,0 +1,100 @@
+{
+  "skills": [
+    {
+      "name": "TypeScript",
+      "category": "Languages",
+      "level": "expert",
+      "yearsOfExperience": 6
+    },
+    {
+      "name": "JavaScript",
+      "category": "Languages",
+      "level": "expert",
+      "yearsOfExperience": 8
+    },
+    {
+      "name": "Python",
+      "category": "Languages",
+      "level": "advanced",
+      "yearsOfExperience": 4
+    },
+    {
+      "name": "SQL",
+      "category": "Languages",
+      "level": "advanced",
+      "yearsOfExperience": 7
+    },
+    {
+      "name": "Next.js",
+      "category": "Frontend",
+      "level": "expert",
+      "yearsOfExperience": 5
+    },
+    {
+      "name": "React",
+      "category": "Frontend",
+      "level": "expert",
+      "yearsOfExperience": 7
+    },
+    {
+      "name": "Tailwind CSS",
+      "category": "Frontend",
+      "level": "expert",
+      "yearsOfExperience": 4
+    },
+    {
+      "name": "Vue.js",
+      "category": "Frontend",
+      "level": "intermediate",
+      "yearsOfExperience": 3
+    },
+    {
+      "name": "Node.js",
+      "category": "Backend",
+      "level": "expert",
+      "yearsOfExperience": 7
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 6
+    },
+    {
+      "name": "MongoDB",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 5
+    },
+    {
+      "name": "Redis",
+      "category": "Backend",
+      "level": "advanced",
+      "yearsOfExperience": 4
+    },
+    {
+      "name": "Docker",
+      "category": "DevOps",
+      "level": "advanced",
+      "yearsOfExperience": 5
+    },
+    {
+      "name": "AWS",
+      "category": "DevOps",
+      "level": "intermediate",
+      "yearsOfExperience": 4
+    },
+    {
+      "name": "CI/CD",
+      "category": "DevOps",
+      "level": "advanced",
+      "yearsOfExperience": 5
+    },
+    {
+      "name": "Git",
+      "category": "DevOps",
+      "level": "expert",
+      "yearsOfExperience": 8
+    }
+  ]
+}

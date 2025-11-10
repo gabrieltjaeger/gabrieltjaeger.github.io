@@ -1,0 +1,100 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "CollabSpace",
+      "description": "Real-time collaboration platform for distributed teams with video, chat, and document editing.",
+      "longDescription": "CollabSpace is a comprehensive collaboration platform I built to solve the challenges of remote work. It combines video conferencing, real-time chat, and collaborative document editing in one seamless experience.",
+      "challenge": "Remote teams were juggling 5+ tools for communication and collaboration. Context switching was killing productivity, and important information was scattered across platforms.",
+      "solution": "Built an all-in-one platform with real-time sync using WebSockets, operational transformation for collaborative editing, and WebRTC for video. Implemented a plugin architecture allowing teams to customize their workspace.",
+      "results": [
+        "Reduced tool switching by 70% for beta users",
+        "Achieved <100ms latency for real-time collaboration",
+        "Scaled to 10,000+ concurrent users",
+        "4.8/5 user satisfaction rating"
+      ],
+      "technologies": ["Next.js", "TypeScript", "WebRTC", "Socket.io", "PostgreSQL", "Redis", "Docker"],
+      "githubUrl": "https://github.com/alexrivera/collabspace",
+      "liveUrl": "https://collabspace.app",
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "+70% productivity",
+        "users": "10K+ users",
+        "duration": "6 months"
+      }
+    },
+    {
+      "id": "project-2",
+      "title": "ShopFlow",
+      "description": "E-commerce platform with AI-powered recommendations and real-time inventory management.",
+      "longDescription": "ShopFlow is a modern e-commerce solution that helps small businesses compete with major retailers through intelligent product recommendations and seamless checkout experiences.",
+      "challenge": "Small e-commerce businesses lacked access to sophisticated recommendation engines and struggled with inventory management across multiple sales channels.",
+      "solution": "Developed a full-stack platform with machine learning-powered recommendations, real-time inventory sync, and a one-click checkout flow. Integrated with Stripe for payments and built a custom analytics dashboard.",
+      "results": [
+        "Increased average order value by 35%",
+        "Reduced cart abandonment by 28%",
+        "Processed $2M+ in transactions",
+        "Zero inventory sync errors across channels"
+      ],
+      "technologies": ["Next.js", "Python", "TensorFlow", "PostgreSQL", "Stripe", "Vercel"],
+      "githubUrl": "https://github.com/alexrivera/shopflow",
+      "liveUrl": "https://shopflow-demo.vercel.app",
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "+35% revenue",
+        "users": "$2M+ processed",
+        "duration": "4 months"
+      }
+    },
+    {
+      "id": "project-3",
+      "title": "DevMetrics",
+      "description": "Analytics platform for engineering teams to track productivity and code quality metrics.",
+      "longDescription": "DevMetrics helps engineering leaders make data-driven decisions by providing actionable insights into team productivity, code quality, and deployment frequency.",
+      "challenge": "Engineering teams had limited visibility into their development process. Managers relied on gut feeling rather than data to identify bottlenecks and improve workflows.",
+      "solution": "Built an analytics platform that integrates with GitHub, Jira, and CI/CD tools to automatically collect and visualize key metrics. Implemented custom dashboards and automated weekly reports.",
+      "results": [
+        "Reduced deployment time by 40%",
+        "Identified and fixed 3 major bottlenecks",
+        "Improved code review turnaround by 50%",
+        "Adopted by 50+ engineering teams"
+      ],
+      "technologies": ["React", "Node.js", "MongoDB", "D3.js", "GitHub API"],
+      "githubUrl": "https://github.com/alexrivera/devmetrics",
+      "liveUrl": "https://devmetrics.io",
+      "featured": true,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "-40% deploy time",
+        "users": "50+ teams",
+        "duration": "5 months"
+      }
+    },
+    {
+      "id": "project-4",
+      "title": "WeatherLens",
+      "description": "Beautiful weather app with hyperlocal forecasts and interactive radar maps.",
+      "longDescription": "WeatherLens provides accurate, hyperlocal weather forecasts with a focus on beautiful design and intuitive data visualization.",
+      "challenge": "Most weather apps are cluttered with ads and provide generic forecasts that don't account for microclimates.",
+      "solution": "Created a clean, ad-free weather app using multiple weather APIs to provide hyperlocal forecasts. Built custom visualizations for radar, temperature trends, and precipitation probability.",
+      "results": [
+        "50,000+ active users",
+        "4.9/5 App Store rating",
+        "Featured in 'Best New Apps'",
+        "95% forecast accuracy"
+      ],
+      "technologies": ["Next.js", "Tailwind CSS", "OpenWeather API", "Mapbox"],
+      "githubUrl": "https://github.com/alexrivera/weatherlens",
+      "liveUrl": "https://weatherlens.app",
+      "featured": false,
+      "imageUrl": "/placeholder.svg?height=400&width=600",
+      "stats": {
+        "impact": "4.9★ rating",
+        "users": "50K+ users",
+        "duration": "3 months"
+      }
+    }
+  ]
+}
